@@ -23,58 +23,6 @@
     }
 }
 
-#section01 {
-    // ANIMATE THE FIRST COLUMN
-    .one-half:nth-child(1) {
-        transition: all 2s ease-out;
-        transform: translate(-50px,0);
-    }
-
-    &[data-sectionstate="active"] {
-        .one-half:nth-child(1) {
-            transform: translate(0,0); 
-        }
-    }
-
-    // ANIMATE THE SECOND COLUMN
-    .one-half:nth-child(2) {
-        transition: all 2s ease-out;
-        transform: translate(50px,0);
-    }
-
-    &[data-sectionstate="active"] {
-        .one-half:nth-child(2) {
-            transform: translate(0,0); 
-        }
-    }
-}
-
-#section02 {
-    // ANIMATE THE FIRST COLUMN
-    .one-half:nth-child(1) {
-        transition: all 2s ease-out;
-        transform: translate(-50px,-50px);
-    }
-
-    &[data-sectionstate="active"] {
-        .one-half:nth-child(1) {
-            transform: translate(0,0); 
-        }
-    }
-
-    // ANIMATE THE SECOND COLUMN
-    .one-half:nth-child(2) {
-        transition: all 2s ease-out;
-        transform: translate(50px,50px);
-    }
-
-    &[data-sectionstate="active"] {
-        .one-half:nth-child(2) {
-            transform: translate(0,0); 
-        }
-    }
-}
-
 // UTILITY / HELPER CLASSES FOR ANIMATION
 // SCALE-IN
 .animate-scale-in,
@@ -123,3 +71,46 @@
          transform: translate(0, 0);
      }
  }
+
+// ANIMATE SVG ON HERO
+#left {
+    animation: left-stroke 1s ease-in-out;
+}  
+
+@keyframes left-stroke {
+    from {
+        transform: translate( 0, 1000px );
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#middle {
+    animation: middle-stroke 1.2s ease-in-out;
+}  
+
+@keyframes middle-stroke {
+    from {
+        transform: translate( 0, 1500px );
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#right {
+    animation: right-stroke 1.4s ease-in-out;
+}  
+
+@keyframes right-stroke {
+    from {
+        transform: translate( 0, 1500px );
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

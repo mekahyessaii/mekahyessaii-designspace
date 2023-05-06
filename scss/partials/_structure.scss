@@ -1,5 +1,6 @@
 /* SITE STRUCUTURE */ 
-.site-header {
+.site-header,
+.site-header-hero {
     position: absolute;
     width: 100%;
     padding: 1em;
@@ -28,16 +29,206 @@
     }
 }
 
+/* SITE MAIN */ 
+.site-main {
+    .home-container {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 92.5vh;
+    }
+
+    
+
+    section-l {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92.5vh;
+        scroll-snap-align: start;
+
+        .proj-section {
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .hero {
+        svg {
+            margin-bottom: 2em;
+        }
+    }
+
+    .proj01 {
+        background-color: $color-gold;
+
+        h1 {
+            text-align: center;
+            line-height: 1.3em;
+            color: $color-dark-brown;
+        }
+
+        h4 {
+            line-height: .2em;
+            color: $color-dark-brown;
+        }
+
+        .button {
+            background-color: $color-white;
+            color: $color-text-headings;
+
+            &:hover {
+                background-color: $color-text-headings;
+                color: $color-white;
+            }
+        }
+    }
+
+    .proj02 {
+        background-color: $color-white;
+
+        h1 {
+            text-align: center;
+            line-height: 1.3em;
+            color: $color-dark-brown;
+        }
+
+        h4 {
+            line-height: .2em;
+        }
+    }
+
+    .proj03 {
+        background-color: $color-gold;
+
+        h1 {
+            text-align: center;
+            line-height: 1.3em;
+            color: $color-dark-brown;
+        }
+
+        h4 {
+            line-height: .2em;
+        }
+
+        .button {
+            background-color: $color-white;
+            color: $color-text-headings;
+
+            &:hover {
+                background-color: $color-text-headings;
+                color: $color-white;
+            }
+        }
+    }
+
+    .proj04 {
+        background-color: $color-white;
+
+        h1 {
+            text-align: center;
+            line-height: 1.3em;
+            color: $color-dark-brown;
+        }
+
+        h4 {
+            line-height: .2em;
+        }
+    }
+
+    .proj05 {
+        background-color: $color-gold;
+
+        h1 {
+            text-align: center;
+            line-height: 1.3em;
+            color: $color-dark-brown;
+        }
+
+        h4 {
+            line-height: .2em;
+        }
+
+        .button {
+            background-color: $color-white;
+            color: $color-text-headings;
+
+            &:hover {
+                background-color: $color-text-headings;
+                color: $color-white;
+            }
+        }
+    }
+
+    .proj06 {
+        background-color: $color-white;
+
+        h1 {
+            text-align: center;
+            line-height: 1.3em;
+            color: $color-dark-brown;
+        }
+
+        h4 {
+            line-height: .2em;
+        }
+    }
+}
+
 /* SITE FOOTER */ 
+
 .site-footer {
-    background-color: black;
+    background-color: $color-light-brown;
     display: flex;
     padding: 1em;
-    justify-content: center;
+    justify-content: space-between;
 
-    a {
-        color: white;
-        text-decoration: none;
+    .site-nav {
+        display: flex;
+        height: 20px;
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 1.2em 0;
+            height: 20px;
+
+            a {
+                color: $color-white;
+                text-decoration: none;
+                letter-spacing: .1em;
+                padding: 0 .5em;
+                height: 20px;
+        
+                &:hover {
+                    color: $color-dark-brown;
+                }
+            }
+        }
+    }
+        
+    .CTA {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+
+            a {
+                margin: 0 1em 0 1em;
+                text-decoration: none;
+                color: $color-white;
+                letter-spacing: .1em;
+                font-size: .69em;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $color-dark-brown;
+                }
+            }
+
+        }
     }
 }
 

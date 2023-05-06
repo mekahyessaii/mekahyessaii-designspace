@@ -1,4 +1,3 @@
-
 // OVERLAY NAV MENU SHOW HIDE
 
 const mymenubutton = document.querySelector('.menu-button');
@@ -28,4 +27,23 @@ const myobserver = new IntersectionObserver((entries) => {
   document.querySelectorAll(".animate-on-scroll").forEach((section) => {
     myobserver.observe(section);
   });
+
+// Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+// IE Fallback
+function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+Array.prototype.forEach.call(elementsToShow, function(element){
+if (isElementInViewport(element)) {
+element.classList.add('is-visible');
+} else {
+element.classList.remove('is-visible');
+}
+});
+
+scroll(loop);
+}
   
