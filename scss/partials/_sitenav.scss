@@ -1,10 +1,10 @@
 /* SITE-HEADER SITE-NAV */ 
-.site-header .site-nav {
+.site-header .site-nav{
     .menu-button {
         position: absolute;
-        top: .75em;
+        top: 1.5em;
         right: .75em;
-        color: white;
+        color: $color-text-headings;
         margin: 0;
         font-size: 1.5em;
         line-height: 1;
@@ -13,7 +13,7 @@
         cursor: pointer;
 
         svg {
-            fill: white;
+            fill: $color-dark-brown;
             rect {
                 transition: .3s all ease-out;
             }
@@ -24,7 +24,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: rgba(255, 0, 0, 1);
+        background-color: $color-white;
         position: fixed;
         top: 0;
         right: 0;
@@ -40,11 +40,43 @@
     }
 
     li {
+        margin: 1em 0;
+        text-transform: uppercase;
+        font-weight: 600;
         font-size: 4vw;
         min-width: 20vw;
         transform: translate(10%,0);
         transition: .3s all ease-out .3s;
         opacity: 0;
+        letter-spacing: .2em;
+
+        a {
+            color: $color-dark-brown;
+            font-size: 2.3em;
+
+            &:hover {
+                color: $color-gold;
+            }
+        }
+
+        .button {
+            display: inline-block;
+            background-color: $color-dark-brown;
+            color: $color-gold;
+            text-decoration: none;
+            padding: 15px 60px;
+            border-radius: 5px;
+            margin: .5em 0 .5em 0;
+
+            a {
+                color: $color-gold;
+            }
+
+            &:hover {
+                color: $color-dark-brown;
+                background-color: $color-gold;
+            }
+        }
     }
 
     &[data-navstate="open"] {
@@ -73,6 +105,43 @@
         li {
             transform: translate(0,0);
             opacity: 1;
+        }
+    }
+
+    /* BIG SCREENS */ 
+    @media (min-width: 768px) {
+        .menu-button {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        ul {
+            background-color: transparent;
+            transform: translate(0,0);
+            position: static;
+            width: auto;
+            height: auto;
+            flex-direction: row;
+            transition: none;
+        }
+
+        li {
+            max-width: 40vw;
+            opacity: 1;
+            transform: translate(0,0);
+            font-size: .3em;
+            min-width: 0;
+            margin: 0 1em 0 6em;
+
+            a {
+                color: $color-text-headings;
+                font-family: $font-family-sans;
+                
+                &:hover {
+                    color: $color-dark-brown;
+                }
+            }
         }
     }
 }
