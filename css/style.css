@@ -27,22 +27,23 @@ TABLE OF CONTENTS
 */
 /* BASE TEXT COLORS */
 body {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(47, 48, 46, 0.8);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgb(0, 0, 0);
+  color: rgb(47, 48, 46);
 }
 
 /* BASE TEXT FONTS */
 body {
-  font-family: "acumin-pro", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "kepler-std-display", Georgia, "Times New Roman", Times, serif;
+  font-family: "brother-1816", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 /* BASE TYPOGRAPHY */
@@ -112,7 +113,7 @@ hr {
 /* SECTION HEADING */
 .section-heading {
   font-size: 1em;
-  font-family: "acumin-pro", Helvetica, Arial, sans-serif;
+  font-family: "brother-1816", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
