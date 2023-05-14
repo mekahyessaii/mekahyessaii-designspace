@@ -31,10 +31,29 @@ body { font-size: 87.5%; }
 
 /* MEDIA QUERIES FOR LARGE SCREENS*/ 
 @media (min-width: $breakpoint-small) {
+    // HEADER
     .site-header,
     .site-header-hero {
         .logo {
-            margin-top: 0 !important;
+            margin-top: 0;
+        }
+    }
+
+    // HERO
+    .hero {
+        h1 {
+            font-size: 4em;
+        }
+
+        h4 {
+            font-size: 1.3em;
+        }
+
+        .hero-title {
+            svg {
+                height: 200px !important;
+                width: 200px !important;
+            }
         }
     }
 }

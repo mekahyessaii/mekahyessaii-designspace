@@ -16,3 +16,20 @@
     }
 }
 
+.button-white {
+    display: inline-block;
+    background-color: $color-white;
+    color: $color-text-headings;
+    font-family: $font-family-sans;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em .5em 1em 0;
+
+    &:hover {
+        background-color: $color-text-headings;
+        color: $color-white;
+    }
+}
+

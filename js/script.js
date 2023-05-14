@@ -14,39 +14,40 @@ mymenubutton.onclick = function() {
 //  REVEAL ON SCROLL ANIMATION
 // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
 const myobserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.setAttribute("data-sectionstate", "active");
-      } else {
-        entry.target.setAttribute("data-sectionstate", "inactive");
-      }
-    });
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.setAttribute("data-sectionstate", "active");
+    } else {
+      entry.target.setAttribute("data-sectionstate", "inactive");
+    }
   });
-  
-  
-  document.querySelectorAll(".animate-on-scroll").forEach((section) => {
-    myobserver.observe(section);
-  });
+});
 
+
+document.querySelectorAll(".animate-on-scroll").forEach((section) => {
+  myobserver.observe(section);
+});
+
+// REVEAL ON SCROLL
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
+
 // IE Fallback
 function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
 function loop() {
 
-Array.prototype.forEach.call(elementsToShow, function(element){
-if (isElementInViewport(element)) {
-element.classList.add('is-visible');
-} else {
-element.classList.remove('is-visible');
-}
-});
+  Array.prototype.forEach.call(elementsToShow, function(element){
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
 
-scroll(loop);
+  scroll(loop);
 }
-
 // CHANGE HOME BUTTON ON HOVER
 $(function(){
   $("#home-logo").on({

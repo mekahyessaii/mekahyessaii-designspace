@@ -58,25 +58,6 @@
                 color: $color-gold;
             }
         }
-
-        .button {
-            display: inline-block;
-            background-color: $color-dark-brown;
-            color: $color-gold;
-            text-decoration: none;
-            padding: 15px 60px;
-            border-radius: 5px;
-            margin: .5em 0 .5em 0;
-
-            a {
-                color: $color-gold;
-            }
-
-            &:hover {
-                color: $color-dark-brown;
-                background-color: $color-gold;
-            }
-        }
     }
 
     &[data-navstate="open"] {

@@ -57,8 +57,8 @@
 
     .hero-title {
         svg {
-            height: 100px;
-            width: 100px;
+            height: 110px;
+            width: 110px;
         }
     }
 }
@@ -106,16 +106,6 @@
             line-height: .2em;
             color: $color-dark-brown;
         }
-
-        .button {
-            background-color: $color-white;
-            color: $color-text-headings;
-
-            &:hover {
-                background-color: $color-text-headings;
-                color: $color-white;
-            }
-        }
     }
 
     .proj02 {
@@ -144,16 +134,6 @@
         h4 {
             line-height: .2em;
         }
-
-        .button {
-            background-color: $color-white;
-            color: $color-text-headings;
-
-            &:hover {
-                background-color: $color-text-headings;
-                color: $color-white;
-            }
-        }
     }
 
     .proj04 {
@@ -181,16 +161,6 @@
 
         h4 {
             line-height: .2em;
-        }
-
-        .button {
-            background-color: $color-white;
-            color: $color-text-headings;
-
-            &:hover {
-                background-color: $color-text-headings;
-                color: $color-white;
-            }
         }
     }
 
