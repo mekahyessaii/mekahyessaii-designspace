@@ -28,3 +28,13 @@ body { font-size: 87.5%; }
 @media (min-width: $breakpoint-large) {
     body { font-size: 112.5%; }
 }
+
+/* MEDIA QUERIES FOR LARGE SCREENS*/ 
+@media (min-width: $breakpoint-small) {
+    .site-header,
+    .site-header-hero {
+        .logo {
+            margin-top: 0 !important;
+        }
+    }
+}

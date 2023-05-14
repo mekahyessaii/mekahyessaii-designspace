@@ -46,4 +46,16 @@ element.classList.remove('is-visible');
 
 scroll(loop);
 }
+
+// CHANGE HOME BUTTON ON HOVER
+$(function(){
+  $("#home-logo").on({
+   mouseenter: function(){
+    $(this).attr('src','img/Personal_Logo_Hover.svg');
+  },
+  mouseleave: function(){
+    $(this).attr('src','img/Personal_Logo.svg');
+  }
+  });
   
+});
