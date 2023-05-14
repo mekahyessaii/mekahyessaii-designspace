@@ -56,4 +56,38 @@ body { font-size: 87.5%; }
             }
         }
     }
+
+    /* SITE FOOTER */ 
+    .site-footer {
+        height: 7.5vh;
+
+        .site-nav {
+            .social-links {
+                margin: .71em 0 !important;
+            }
+        }
+
+        .CTA {
+            margin: .3em 0 !important;
+    
+            li {
+                list-style: none;
+    
+                a {
+                    margin: 0 1em 0 1em;
+                    text-decoration: none;
+                    color: $color-white;
+                    letter-spacing: .1em;
+                    font-size: .69em;
+                    font-weight: 700;
+                    text-transform: uppercase;
+    
+                    &:hover {
+                        color: $color-dark-brown;
+                    }
+                }
+    
+            }
+        }
+    }
 }
