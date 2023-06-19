@@ -1,35 +1,39 @@
 /* BUTTONS */
+.button-brown {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid $color-lightest-brown;
+    color: $color-lightest-brown;
+    font-family: $font-family-sans;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .7em 1em;
+    border-radius: 5px;
+    margin: 1em .5em 1em 0;
+
+    &:hover {
+        border: 2px solid $color-lighter-brown;
+        color: $color-dark-brown;
+        background-color: $color-lighter-brown;
+    }
+}
+
 .button {
     display: inline-block;
-    background-color: $color-dark-brown;
+    background-color: transparent;
+    border: 2px solid $color-gold;
     color: $color-gold;
     font-family: $font-family-sans;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1em;
+    padding: .7em 1em;
     border-radius: 5px;
     margin: 1em .5em 1em 0;
 
     &:hover {
-        color: $color-dark-brown;
+        border: 2px solid $color-gold;
+        color: $color-lighter-brown;
         background-color: $color-gold;
-    }
-}
-
-.button-white {
-    display: inline-block;
-    background-color: $color-white;
-    color: $color-text-headings;
-    font-family: $font-family-sans;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1em;
-    border-radius: 5px;
-    margin: 1em .5em 1em 0;
-
-    &:hover {
-        background-color: $color-text-headings;
-        color: $color-white;
     }
 }
 

@@ -79,17 +79,17 @@ p {
 
 /* LINKS */
 a {
-  color: rgb(94, 78, 74);
+  color: rgb(63, 51, 48);
 }
 a:hover {
-  color: rgb(140, 95, 79);
+  color: rgb(122, 102, 97);
 }
 
 /* HORIZONTAL LINE */
 hr {
   border: 0;
   height: 1px;
-  background-color: rgb(218, 198, 141);
+  background-color: rgb(255, 237, 189);
   margin: 3em 0;
 }
 
@@ -110,36 +110,40 @@ hr {
 }
 
 /* BUTTONS */
-.button {
+.button-brown {
   display: inline-block;
-  background-color: rgb(94, 78, 74);
-  color: rgb(218, 198, 141);
+  background-color: transparent;
+  border: 2px solid rgb(180, 118, 101);
+  color: rgb(180, 118, 101);
   font-family: "brother-1816", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1em;
+  padding: 0.7em 1em;
+  border-radius: 5px;
+  margin: 1em 0.5em 1em 0;
+}
+.button-brown:hover {
+  border: 2px solid rgb(145, 95, 77);
+  color: rgb(63, 51, 48);
+  background-color: rgb(145, 95, 77);
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid rgb(255, 237, 189);
+  color: rgb(255, 237, 189);
+  font-family: "brother-1816", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.7em 1em;
   border-radius: 5px;
   margin: 1em 0.5em 1em 0;
 }
 .button:hover {
-  color: rgb(94, 78, 74);
-  background-color: rgb(218, 198, 141);
-}
-
-.button-white {
-  display: inline-block;
-  background-color: rgb(241, 240, 243);
-  color: rgb(47, 48, 46);
-  font-family: "brother-1816", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1em;
-  border-radius: 5px;
-  margin: 1em 0.5em 1em 0;
-}
-.button-white:hover {
-  background-color: rgb(47, 48, 46);
-  color: rgb(241, 240, 243);
+  border: 2px solid rgb(255, 237, 189);
+  color: rgb(145, 95, 77);
+  background-color: rgb(255, 237, 189);
 }
 
 /* RESPONSIVE IMAGES */
@@ -222,7 +226,7 @@ body {
     text-transform: uppercase;
   }
   .site-footer .CTA li a:hover {
-    color: rgb(94, 78, 74);
+    color: rgb(63, 51, 48);
   }
 }
 /* SEMANTIC GRID */
@@ -332,7 +336,7 @@ body {
 }
 .site-header a,
 .site-header-hero a {
-  color: rgb(218, 198, 141);
+  color: rgb(255, 237, 189);
   text-decoration: none;
 }
 .site-header h1,
@@ -423,76 +427,81 @@ body {
   margin-bottom: 2em;
 }
 .site-main .proj01 {
-  background-color: rgb(218, 198, 141);
+  background-color: rgb(63, 51, 48);
 }
 .site-main .proj01 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(94, 78, 74);
+  color: rgb(145, 95, 77);
 }
 .site-main .proj01 h4 {
   line-height: 0.2em;
-  color: rgb(94, 78, 74);
+  color: rgb(145, 95, 77);
 }
 .site-main .proj02 {
-  background-color: rgb(241, 240, 243);
+  background-color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj02 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(94, 78, 74);
+  color: rgb(255, 237, 189);
 }
 .site-main .proj02 h4 {
   line-height: 0.2em;
+  color: rgb(255, 237, 189);
 }
 .site-main .proj03 {
-  background-color: rgb(218, 198, 141);
+  background-color: rgb(63, 51, 48);
 }
 .site-main .proj03 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(94, 78, 74);
+  color: rgb(145, 95, 77);
 }
 .site-main .proj03 h4 {
   line-height: 0.2em;
+  color: rgb(145, 95, 77);
 }
 .site-main .proj04 {
-  background-color: rgb(241, 240, 243);
+  background-color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj04 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(94, 78, 74);
+  color: rgb(255, 237, 189);
 }
 .site-main .proj04 h4 {
   line-height: 0.2em;
+  color: rgb(255, 237, 189);
 }
 .site-main .proj05 {
-  background-color: rgb(218, 198, 141);
+  background-color: rgb(63, 51, 48);
 }
 .site-main .proj05 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(94, 78, 74);
+  color: rgb(145, 95, 77);
 }
 .site-main .proj05 h4 {
   line-height: 0.2em;
+  color: rgb(145, 95, 77);
 }
 .site-main .proj06 {
-  background-color: rgb(241, 240, 243);
+  background-color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj06 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(94, 78, 74);
+  color: rgb(255, 237, 189);
 }
 .site-main .proj06 h4 {
   line-height: 0.2em;
+  color: rgb(255, 237, 189);
 }
 
 /* SITE FOOTER */
 .site-footer {
-  background-color: rgb(140, 95, 79);
+  background-color: rgb(122, 102, 97);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,7 +534,7 @@ body {
   height: 20px;
 }
 .site-footer .site-nav .social-links a:hover {
-  color: rgb(94, 78, 74);
+  color: rgb(63, 51, 48);
 }
 .site-footer .CTA {
   display: -webkit-box;
@@ -548,7 +557,7 @@ body {
   text-transform: uppercase;
 }
 .site-footer .CTA li a:hover {
-  color: rgb(94, 78, 74);
+  color: rgb(63, 51, 48);
 }
 
 section {
@@ -579,7 +588,7 @@ section {
   cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
-  fill: rgb(94, 78, 74);
+  fill: rgb(180, 118, 101);
 }
 .site-header .site-nav .menu-button svg rect {
   -webkit-transition: 0.3s all ease-out;
@@ -589,7 +598,7 @@ section {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgb(241, 240, 243);
+  background-color: rgb(63, 51, 48);
   position: fixed;
   top: 0;
   right: 0;
@@ -628,11 +637,11 @@ section {
   letter-spacing: 0.2em;
 }
 .site-header .site-nav li a {
-  color: rgb(94, 78, 74);
+  color: rgb(180, 118, 101);
   font-size: 2.3em;
 }
 .site-header .site-nav li a:hover {
-  color: rgb(218, 198, 141);
+  color: rgb(255, 237, 189);
 }
 .site-header .site-nav[data-navstate=open] .menu-button {
   position: fixed;
@@ -695,7 +704,7 @@ section {
     font-family: "brother-1816", Helvetica, Arial, sans-serif;
   }
   .site-header .site-nav li a:hover {
-    color: rgb(94, 78, 74);
+    color: rgb(63, 51, 48);
   }
 }
 
