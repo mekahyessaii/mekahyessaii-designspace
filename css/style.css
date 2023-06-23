@@ -219,7 +219,7 @@ body {
   .site-footer .CTA li a {
     margin: 0 1em 0 1em;
     text-decoration: none;
-    color: rgb(241, 240, 243);
+    color: rgb(255, 237, 189);
     letter-spacing: 0.1em;
     font-size: 0.69em;
     font-weight: 700;
@@ -395,6 +395,16 @@ body {
   height: 120px;
   width: 120px;
 }
+.hero .home-container {
+  background-image: url("/img/AmberAyre_Hero.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.project-hero .hero-type .hero-name,
+.project-hero .hero-type .hero-subname {
+  color: rgba(47, 48, 46, 0.8);
+}
 
 /* SITE MAIN */
 .site-main .home-container {
@@ -509,12 +519,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 5.3em;
 }
 .site-footer .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20px;
+  height: 44.5px;
 }
 .site-footer .site-nav .social-links {
   display: -webkit-box;
@@ -527,7 +538,7 @@ body {
   height: 20px;
 }
 .site-footer .site-nav .social-links a {
-  color: rgb(241, 240, 243);
+  color: rgb(255, 237, 189);
   text-decoration: none;
   letter-spacing: 0.1em;
   padding: 0 0.5em;
@@ -535,6 +546,20 @@ body {
 }
 .site-footer .site-nav .social-links a:hover {
   color: rgb(63, 51, 48);
+}
+.site-footer .site-nav .footer-info {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.site-footer .site-nav .footer-info img {
+  width: 45px;
+}
+.site-footer .site-nav .footer-info .footer-white {
+  color: rgb(241, 240, 243);
 }
 .site-footer .CTA {
   display: -webkit-box;
@@ -545,12 +570,13 @@ body {
           justify-content: center;
 }
 .site-footer .CTA li {
+  font-family: "brother-1816", Helvetica, Arial, sans-serif;
   list-style: none;
 }
 .site-footer .CTA li a {
   margin: 0 1em 0 1em;
   text-decoration: none;
-  color: rgb(241, 240, 243);
+  color: rgb(255, 237, 189);
   letter-spacing: 0.1em;
   font-size: 0.69em;
   font-weight: 700;
@@ -700,11 +726,11 @@ section {
     margin: 0 1em 0 6em;
   }
   .site-header .site-nav li a {
-    color: rgb(47, 48, 46);
+    color: rgb(180, 118, 101);
     font-family: "brother-1816", Helvetica, Arial, sans-serif;
   }
   .site-header .site-nav li a:hover {
-    color: rgb(63, 51, 48);
+    color: rgb(145, 95, 77);
   }
 }
 

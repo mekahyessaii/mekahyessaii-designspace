@@ -61,6 +61,22 @@
             width: 120px;
         }
     }
+
+    .home-container {
+        background-image: url('/img/AmberAyre_Hero.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.project-hero {
+    .hero-type {
+        .hero-name,
+        .hero-subname {
+            color: $color-text-body;
+        }
+
+    }
 }
 
 /* SITE MAIN */ 
@@ -190,10 +206,11 @@
     display: flex;
     padding: 1em;
     justify-content: space-between;
+    height: 5.3em;
 
     .site-nav {
         display: flex;
-        height: 20px;
+        height: 44.5px;
 
         .social-links {
             display: flex;
@@ -202,7 +219,7 @@
             height: 20px;
 
             a {
-                color: $color-white;
+                color: $color-gold;
                 text-decoration: none;
                 letter-spacing: .1em;
                 padding: 0 .5em;
@@ -213,6 +230,20 @@
                 }
             }
         }
+
+        .footer-info {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+
+            img {
+                width: 45px;
+            }
+
+            .footer-white {
+                color: $color-white;
+            }
+        }
     }
         
     .CTA {
@@ -220,12 +251,13 @@
         justify-content: center;
 
         li {
+            font-family: $font-family-sans;
             list-style: none;
 
             a {
                 margin: 0 1em 0 1em;
                 text-decoration: none;
-                color: $color-white;
+                color: $color-gold;
                 letter-spacing: .1em;
                 font-size: .69em;
                 font-weight: 700;
