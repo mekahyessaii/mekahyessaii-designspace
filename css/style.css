@@ -124,7 +124,7 @@ hr {
 }
 .button-brown:hover {
   border: 2px solid rgb(145, 95, 77);
-  color: rgb(63, 51, 48);
+  color: rgb(235, 201, 127);
   background-color: rgb(145, 95, 77);
 }
 
@@ -169,6 +169,12 @@ body {
   padding: 0 1em;
 }
 
+.project-container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 1em;
+}
+
 /* MEDIA QUEIRES */
 /* RESPONSIVE TYPOGRAPHY */
 body {
@@ -205,7 +211,7 @@ body {
 
   /* SITE FOOTER */
   .site-footer {
-    height: 7.5vh;
+    height: 7vh !important;
   }
   .site-footer .site-nav .social-links {
     margin: 0.71em 0 !important;
@@ -401,9 +407,22 @@ body {
   background-size: cover;
 }
 
-.project-hero .hero-type .hero-name,
-.project-hero .hero-type .hero-subname {
-  color: rgba(47, 48, 46, 0.8);
+.project-section {
+  top: 0;
+  background-image: url("/img/AmberAyre_Hero.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-hero .project-hero,
+.project-hero .project-subhero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* SITE MAIN */
@@ -449,16 +468,16 @@ body {
   color: rgb(145, 95, 77);
 }
 .site-main .proj02 {
-  background-color: rgba(47, 48, 46, 0.8);
+  background-color: rgb(255, 237, 189);
 }
 .site-main .proj02 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(255, 237, 189);
+  color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj02 h4 {
   line-height: 0.2em;
-  color: rgb(255, 237, 189);
+  color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj03 {
   background-color: rgb(63, 51, 48);
@@ -473,16 +492,16 @@ body {
   color: rgb(145, 95, 77);
 }
 .site-main .proj04 {
-  background-color: rgba(47, 48, 46, 0.8);
+  background-color: rgb(255, 237, 189);
 }
 .site-main .proj04 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(255, 237, 189);
+  color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj04 h4 {
   line-height: 0.2em;
-  color: rgb(255, 237, 189);
+  color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj05 {
   background-color: rgb(63, 51, 48);
@@ -497,18 +516,19 @@ body {
   color: rgb(145, 95, 77);
 }
 .site-main .proj06 {
-  background-color: rgba(47, 48, 46, 0.8);
+  background-color: rgb(255, 237, 189);
 }
 .site-main .proj06 h1 {
   text-align: center;
   line-height: 1.3em;
-  color: rgb(255, 237, 189);
+  color: rgba(47, 48, 46, 0.8);
 }
 .site-main .proj06 h4 {
   line-height: 0.2em;
-  color: rgb(255, 237, 189);
+  color: rgba(47, 48, 46, 0.8);
 }
 
+/* PROJECT INFORMATION */
 /* SITE FOOTER */
 .site-footer {
   background-color: rgb(122, 102, 97);
@@ -614,7 +634,7 @@ section {
   cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
-  fill: rgb(180, 118, 101);
+  fill: rgb(145, 95, 77);
 }
 .site-header .site-nav .menu-button svg rect {
   -webkit-transition: 0.3s all ease-out;
@@ -663,7 +683,7 @@ section {
   letter-spacing: 0.2em;
 }
 .site-header .site-nav li a {
-  color: rgb(180, 118, 101);
+  color: rgb(145, 95, 77);
   font-size: 2.3em;
 }
 .site-header .site-nav li a:hover {
@@ -726,11 +746,11 @@ section {
     margin: 0 1em 0 6em;
   }
   .site-header .site-nav li a {
-    color: rgb(180, 118, 101);
+    color: rgb(145, 95, 77);
     font-family: "brother-1816", Helvetica, Arial, sans-serif;
   }
   .site-header .site-nav li a:hover {
-    color: rgb(145, 95, 77);
+    color: rgb(180, 118, 101);
   }
 }
 

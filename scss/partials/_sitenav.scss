@@ -13,7 +13,7 @@
         cursor: pointer;
 
         svg {
-            fill: $color-lightest-brown;
+            fill: $color-lighter-brown;
 
             rect {
                 transition: .3s all ease-out;
@@ -52,7 +52,7 @@
         letter-spacing: .2em;
 
         a {
-            color: $color-lightest-brown;
+            color: $color-lighter-brown;
             font-size: 2.3em;
 
             &:hover {
@@ -117,11 +117,11 @@
             margin: 0 1em 0 6em;
 
             a {
-                color: $color-lightest-brown;
+                color: $color-lighter-brown;
                 font-family: $font-family-sans;
                 
                 &:hover {
-                    color: $color-lighter-brown;
+                    color: $color-lightest-brown;
                 }
             }
         }

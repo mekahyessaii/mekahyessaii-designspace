@@ -69,13 +69,19 @@
     }
 }
 
-.project-hero {
-    .hero-type {
-        .hero-name,
-        .hero-subname {
-            color: $color-text-body;
-        }
+.project-section {
+    top: 0;
+    background-image: url('/img/AmberAyre_Hero.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.project-hero {
+    .project-hero,
+    .project-subhero {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -125,17 +131,17 @@
     }
 
     .proj02 {
-        background-color: $color-text-body;
+        background-color: $color-gold;
 
         h1 {
             text-align: center;
             line-height: 1.3em;
-            color: $color-gold;
+            color: $color-text-body;
         }
 
         h4 {
             line-height: .2em;
-            color: $color-gold;
+            color: $color-text-body;
         }
     }
 
@@ -155,17 +161,17 @@
     }
 
     .proj04 {
-        background-color: $color-text-body;
+        background-color: $color-gold;
 
         h1 {
             text-align: center;
             line-height: 1.3em;
-            color: $color-gold;
+            color: $color-text-body;
         }
 
         h4 {
             line-height: .2em;
-            color: $color-gold;
+            color: $color-text-body;
         }
     }
 
@@ -185,19 +191,23 @@
     }
 
     .proj06 {
-        background-color: $color-text-body;
+        background-color: $color-gold;
 
         h1 {
             text-align: center;
             line-height: 1.3em;
-            color: $color-gold;
+            color: $color-text-body;
         }
 
         h4 {
             line-height: .2em;
-            color: $color-gold;
+            color: $color-text-body;
         }
     }
+}
+
+/* PROJECT INFORMATION */ 
+.proj-info {
 }
 
 /* SITE FOOTER */ 
