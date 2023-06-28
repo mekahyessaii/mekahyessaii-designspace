@@ -207,7 +207,30 @@
 }
 
 /* PROJECT INFORMATION */ 
-.proj-info {
+.project-container {
+    .proj-info {
+        margin: 4em 0 2em 0;
+    }
+    
+    hr {
+        margin: 2em 0 1em 0;
+        width: 20px;
+    }
+    
+    .project-stats {
+        margin: 0;
+        
+        .status {
+            display: flex;
+
+            h6 {
+                margin-right: 1em;
+                opacity: 0.5;
+                text-transform: uppercase;
+                font-size: .75em;
+            }
+        }
+    }
 }
 
 /* SITE FOOTER */ 
@@ -282,9 +305,25 @@
     }
 }
 
+/* SECTIONS */ 
+
 section {
     padding: 4em 0;
     min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+section-s {
+    padding: 4em 0;
+    min-height: 40vh;
+    display: grid;
+    align-items: center;
+}
+
+section-m {
+    padding: 4em 0;
+    min-height: 80vh;
     display: grid;
     align-items: center;
 }
