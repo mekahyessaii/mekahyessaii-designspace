@@ -1,6 +1,6 @@
 /* BASE TEXT COLORS */ 
-body {color: $color-text-body;}
-h1, h2, h3, h4, h5, h6 {color: $color-text-headings;}
+body {color: $color-black;}
+h1, h2, h3, h4, h5, h6 {color: $color-black;}
 
 /* BASE TEXT FONTS */ 
 body {font-family: $font-family-serif;}
@@ -40,10 +40,10 @@ p {max-width: 40em;}
 
 /* LINKS */ 
 a {
-    color: $color-dark-brown;
+    color: $color-brown;
 
     &:hover {
-        color: $color-light-brown;
+        color: $color-brown;
     }
 }
 
@@ -51,7 +51,7 @@ a {
 hr {
     border: 0;
     height: 3px;
-    background-color: $color-lighter-brown;
+    background-color: $color-brown;
     margin: 3em 0;
 }
 

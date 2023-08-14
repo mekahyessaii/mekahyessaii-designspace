@@ -11,7 +11,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1400px;
     padding: 0 1em;
 }
 
@@ -46,20 +46,38 @@ body { font-size: 87.5%; }
     }
 
     // HERO
-    .hero {
-        h1 {
-            font-size: 4em;
+    .hero-home {
+        .connect-button {
+            justify-content: flex-start !important;
         }
 
-        h4 {
-            font-size: 1.3em;
-        }
-
-        .hero-title {
-            svg {
-                height: 200px !important;
-                width: 200px !important;
-            }
+        .scroll-down {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            $animation-delay: .1s;
+            $arrow-size: 12px;
+            
+            .scroll-arrow {
+                width: $arrow-size;
+                height: $arrow-size;
+                transform: rotate(45deg);
+                border-right: 2px solid $color-green;
+                border-bottom: 2px solid $color-green;
+                animation: arrow-wave 1s infinite;
+                animation-direction: alternate;
+                @for $i from 1 through 3 {
+                  &:nth-child(#{$i}) {
+                    animation-delay: $animation-delay*$i;
+                  }
+                }
+              }
+              
+              @keyframes arrow-wave {
+                0% {opacity: 0;}
+                50% {opacity: .5;}
+                100% {opacity: 1;}
+              }
         }
     }
 
@@ -72,6 +90,10 @@ body { font-size: 87.5%; }
                 margin: .71em 0 !important;
             }
         }
+        .reserved {
+            padding: .6em !important;
+            font-size: .8em !important;
+        }
 
         .CTA {
             margin: .3em 0 !important;
@@ -80,7 +102,7 @@ body { font-size: 87.5%; }
                 list-style: none;
     
                 a {
-                    margin: 0 1em 0 1em;
+                    margin: 0 1em 0 0;
                     text-decoration: none;
                     color: $color-gold;
                     letter-spacing: .1em;
@@ -90,7 +112,7 @@ body { font-size: 87.5%; }
                     
     
                     &:hover {
-                        color: $color-dark-brown;
+                        color: $color-brown;
                     }
                 }
             }

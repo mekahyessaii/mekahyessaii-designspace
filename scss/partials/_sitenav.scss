@@ -4,7 +4,7 @@
         position: absolute;
         top: 1.5em;
         right: .75em;
-        color: $color-text-headings;
+        color: $color-black;
         margin: 0;
         font-size: 1.5em;
         line-height: 1;
@@ -13,7 +13,7 @@
         cursor: pointer;
 
         svg {
-            fill: $color-lighter-brown;
+            fill: $color-brown;
 
             rect {
                 transition: .3s all ease-out;
@@ -25,7 +25,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: $color-dark-brown;
+        background-color: $color-gold;
         position: fixed;
         top: 0;
         right: 0;
@@ -52,7 +52,7 @@
         letter-spacing: .2em;
 
         a {
-            color: $color-lighter-brown;
+            color: $color-brown;
             font-size: 2.3em;
 
             &:hover {
@@ -117,11 +117,11 @@
             margin: 0 1em 0 6em;
 
             a {
-                color: $color-lighter-brown;
+                color: $color-brown;
                 font-family: $font-family-sans;
                 
                 &:hover {
-                    color: $color-lightest-brown;
+                    color: $color-brown;
                 }
             }
         }

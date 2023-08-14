@@ -1,28 +1,9 @@
 /* BUTTONS */
-.button-brown {
-    display: inline-block;
-    background-color: transparent;
-    border: 2px solid $color-lightest-brown;
-    color: $color-lightest-brown;
-    font-family: $font-family-sans;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: .7em 1em;
-    border-radius: 5px;
-    margin: 1em .5em 1em 0;
-
-    &:hover {
-        border: 2px solid $color-lighter-brown;
-        color: $color-dark-gold;
-        background-color: $color-lighter-brown;
-    }
-}
-
 .button {
     display: inline-block;
     background-color: transparent;
-    border: 2px solid $color-gold;
-    color: $color-gold;
+    border: 2px solid $color-green;
+    color: $color-green;
     font-family: $font-family-sans;
     text-transform: uppercase;
     text-decoration: none;
@@ -31,9 +12,9 @@
     margin: 1em .5em 1em 0;
 
     &:hover {
-        border: 2px solid $color-gold;
-        color: $color-lighter-brown;
-        background-color: $color-gold;
+        border: 2px solid $color-green;
+        color: $color-white;
+        background-color: $color-green;
     }
 }
 

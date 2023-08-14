@@ -39,7 +39,7 @@
 /* HERO SECTION */
 .hero {
     background-color: $color-white;
-    color: $color-text-headings;
+    color: $color-black;
     text-align: center;
     padding: 6em 0;
     min-height: 100vh;
@@ -47,7 +47,7 @@
     place-items: center;
 
     h1 {
-        color: $color-text-headings;
+        color: $color-black;
         margin-bottom: .25em;
     }
 
@@ -57,17 +57,19 @@
 
     .hero-title {
         svg {
-            height: 120px;
-            width: 120px;
+            height: 500px;
+            width: 500px;
         }
     }
 
-    .home-container {
+    .home-container-amber {
         background-image: url('/img/AmberAyre_Hero.jpg');
         background-position: center;
         background-size: cover;
     }
 }
+
+
 
 .project-section {
     top: 0;
@@ -87,123 +89,45 @@
 
 /* SITE MAIN */ 
 .site-main {
-    .home-container {
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-        height: 92.5vh;
-    }
+    background-color: $color-white;
 
-    
 
-    section-l {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 92.5vh;
-        scroll-snap-align: start;
+    .hero-home {
+        margin: 0 1em 0 1em;
 
-        .proj-section {
-            display: inline-block;
-            justify-content: center;
-            text-align: center;
+        .row {
+            margin-bottom: 0;
         }
-    }
-
-    .hero {
-        svg {
+        
+        .introduction {
             margin-bottom: 2em;
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        .connect-button {
+            display: flex;
+            justify-content: center;
         }
     }
+
 
     .proj01 {
-        background-color: $color-dark-brown;
 
         h1 {
-            text-align: center;
             line-height: 1.3em;
-            color: $color-lighter-brown;
+            color: $color-brown;
         }
 
         h4 {
             line-height: .2em;
-            color: $color-lighter-brown;
+            color: $color-brown;
         }
     }
 
-    .proj02 {
-        background-color: $color-gold;
 
-        h1 {
-            text-align: center;
-            line-height: 1.3em;
-            color: $color-text-body;
-        }
-
-        h4 {
-            line-height: .2em;
-            color: $color-text-body;
-        }
-    }
-
-    .proj03 {
-        background-color: $color-dark-brown;
-
-        h1 {
-            text-align: center;
-            line-height: 1.3em;
-            color: $color-lighter-brown;
-        }
-
-        h4 {
-            line-height: .2em;
-            color: $color-lighter-brown;
-        }
-    }
-
-    .proj04 {
-        background-color: $color-gold;
-
-        h1 {
-            text-align: center;
-            line-height: 1.3em;
-            color: $color-text-body;
-        }
-
-        h4 {
-            line-height: .2em;
-            color: $color-text-body;
-        }
-    }
-
-    .proj05 {
-        background-color: $color-dark-brown;
-
-        h1 {
-            text-align: center;
-            line-height: 1.3em;
-            color: $color-lighter-brown;
-        }
-
-        h4 {
-            line-height: .2em;
-            color: $color-lighter-brown;
-        }
-    }
-
-    .proj06 {
-        background-color: $color-gold;
-
-        h1 {
-            text-align: center;
-            line-height: 1.3em;
-            color: $color-text-body;
-        }
-
-        h4 {
-            line-height: .2em;
-            color: $color-text-body;
-        }
-    }
 }
 
 /* PROJECT INFORMATION */ 
@@ -235,7 +159,7 @@
 
 /* SITE FOOTER */ 
 .site-footer {
-    background-color: $color-light-brown;
+    background-color: $color-brown;
     display: flex;
     padding: 1em;
     justify-content: space-between;
@@ -259,7 +183,7 @@
                 height: 20px;
         
                 &:hover {
-                    color: $color-dark-brown;
+                    color: $color-white;
                 }
             }
         }
@@ -278,17 +202,28 @@
             }
         }
     }
+
+    .reserved {
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+
+        p {
+            color: $color-copy-brown;
+        }
+    }
         
     .CTA {
         display: flex;
         justify-content: center;
+        padding: 0;
 
         li {
             font-family: $font-family-sans;
             list-style: none;
 
             a {
-                margin: 0 1em 0 1em;
+                margin: 0 1em 0 0;
                 text-decoration: none;
                 color: $color-gold;
                 letter-spacing: .1em;
@@ -297,19 +232,20 @@
                 text-transform: uppercase;
 
                 &:hover {
-                    color: $color-dark-brown;
+                    color: $color-brown;
                 }
             }
 
         }
     }
+    
 }
 
 /* SECTIONS */ 
 
-section {
-    padding: 4em 0;
-    min-height: 100vh;
+section-xs {
+    padding: 1em 0;
+    min-height: 2vh;
     display: grid;
     align-items: center;
 }
@@ -324,6 +260,13 @@ section-s {
 section-m {
     padding: 4em 0;
     min-height: 80vh;
+    display: grid;
+    align-items: center;
+}
+
+section {
+    padding: 4em 0;
+    min-height: 100vh;
     display: grid;
     align-items: center;
 }
