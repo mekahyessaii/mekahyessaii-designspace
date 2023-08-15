@@ -356,7 +356,7 @@ body {
   }
   .site-footer .reserved {
     padding: 0.6em !important;
-    font-size: 0.8em !important;
+    font-size: 1em !important;
   }
   .site-footer .CTA {
     margin: 0.3em 0 !important;
@@ -1159,7 +1159,7 @@ section-p {
           transform: translate(0, 0);
 }
 
-#top,
+#first,
 [data-sectionstate=inactive] #left {
   -webkit-animation: left-stroke 1s ease-in-out;
           animation: left-stroke 1s ease-in-out;
@@ -1187,7 +1187,7 @@ section-p {
   }
 }
 
-#middle,
+#second,
 [data-sectionstate=inactive] #middle {
   -webkit-animation: middle-stroke 1.2s ease-in-out;
           animation: middle-stroke 1.2s ease-in-out;
@@ -1215,7 +1215,7 @@ section-p {
   }
 }
 
-#bottom,
+#third,
 [data-sectionstate=inactive] #right {
   -webkit-animation: right-stroke 1.4s ease-in-out;
           animation: right-stroke 1.4s ease-in-out;
@@ -1230,6 +1230,57 @@ section-p {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+@keyframes right-stroke {
+  from {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#fourth,
+[data-sectionstate=inactive] #left {
+  -webkit-animation: left-stroke 1.6s ease-in-out;
+          animation: left-stroke 1.6s ease-in-out;
+}
+
+@keyframes left-stroke {
+  from {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#fifth,
+[data-sectionstate=inactive] #middle {
+  -webkit-animation: middle-stroke 1.8s ease-in-out;
+          animation: middle-stroke 1.8s ease-in-out;
+}
+
+@keyframes middle-stroke {
+  from {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#sixth,
+[data-sectionstate=inactive] #right {
+  -webkit-animation: right-stroke 2s ease-in-out;
+          animation: right-stroke 2s ease-in-out;
 }
 
 @keyframes right-stroke {

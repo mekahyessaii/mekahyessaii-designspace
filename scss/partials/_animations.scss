@@ -77,7 +77,7 @@
  }
 
 // ANIMATE HERO TEXT
-#01,
+#first,
 [data-sectionstate="inactive"] #left {
     animation: left-stroke 1s ease-in-out;
 }  
@@ -95,7 +95,7 @@
     }
 }
 
-#02,
+#second,
 [data-sectionstate="inactive"] #middle {
     animation: middle-stroke 1.2s ease-in-out;
 }  
@@ -112,7 +112,7 @@
     }
 }
 
-#03,
+#third,
 [data-sectionstate="inactive"] #right {
     animation: right-stroke 1.4s ease-in-out;
 }  
@@ -129,7 +129,7 @@
     }
 }
 
-#04,
+#fourth,
 [data-sectionstate="inactive"] #left {
     animation: left-stroke 1.6s ease-in-out;
 }  
@@ -147,7 +147,7 @@
     }
 }
 
-#05,
+#fifth,
 [data-sectionstate="inactive"] #middle {
     animation: middle-stroke 1.8s ease-in-out;
 }  
@@ -164,7 +164,7 @@
     }
 }
 
-#06,
+#sixth,
 [data-sectionstate="inactive"] #right {
     animation: right-stroke 2s ease-in-out;
 }  
