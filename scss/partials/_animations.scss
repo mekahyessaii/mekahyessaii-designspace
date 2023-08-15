@@ -77,7 +77,7 @@
  }
 
 // ANIMATE HERO TEXT
-#top,
+#01,
 [data-sectionstate="inactive"] #left {
     animation: left-stroke 1s ease-in-out;
 }  
@@ -95,7 +95,7 @@
     }
 }
 
-#middle,
+#02,
 [data-sectionstate="inactive"] #middle {
     animation: middle-stroke 1.2s ease-in-out;
 }  
@@ -112,9 +112,61 @@
     }
 }
 
-#bottom,
+#03,
 [data-sectionstate="inactive"] #right {
     animation: right-stroke 1.4s ease-in-out;
+}  
+
+[data-sectionstate="active"] #right {
+    @keyframes right-stroke {
+        from {
+            transform: translate( 0, 100px );
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+}
+
+#04,
+[data-sectionstate="inactive"] #left {
+    animation: left-stroke 1.6s ease-in-out;
+}  
+
+
+[data-sectionstate="active"] #left {
+    @keyframes left-stroke {
+        from {
+            transform: translate( 0, 100px );
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+}
+
+#05,
+[data-sectionstate="inactive"] #middle {
+    animation: middle-stroke 1.8s ease-in-out;
+}  
+
+[data-sectionstate="active"] #middle {
+    @keyframes middle-stroke {
+        from {
+            transform: translate( 0, 100px );
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+}
+
+#06,
+[data-sectionstate="inactive"] #right {
+    animation: right-stroke 2s ease-in-out;
 }  
 
 [data-sectionstate="active"] #right {
@@ -299,4 +351,19 @@
 .inline-photo-above2.is-visible {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+/* IMAGE HOVER */ 
+.img-hover {
+    transform: scale(1);
+    transition: ease-in-out .3s;
+
+    img {
+        border-radius: 1em;
+    }
+
+    &:hover {
+        transform: scale(0.96);
+        transition: ease-in-out .3s;
+    }
 }

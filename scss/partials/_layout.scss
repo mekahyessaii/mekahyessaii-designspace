@@ -15,6 +15,12 @@ body {
     padding: 0 1em;
 }
 
+.proj-container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 1em;
+}
+
 .project-container {
     margin: 0 auto;
     max-width: 1400px;
@@ -37,7 +43,7 @@ body { font-size: 87.5%; }
 
 /* MEDIA QUERIES FOR LARGE SCREENS*/ 
 @media (min-width: $breakpoint-small) {
-    // HEADER
+    /* HEADER */
     .site-header,
     .site-header-hero {
         .logo {
@@ -45,7 +51,7 @@ body { font-size: 87.5%; }
         }
     }
 
-    // HERO
+    /* HERO */
     .hero-home {
         .connect-button {
             justify-content: flex-start !important;
@@ -81,6 +87,30 @@ body { font-size: 87.5%; }
         }
     }
 
+    /* SITE MAIN */ 
+    .site-main {
+        .home-projsection {
+            margin: 0;
+            display: flex;
+            margin: 0 150px;
+        } 
+    }
+
+    .introduction {
+        h1 {
+            font-size: 3em !important;
+        }
+    }
+
+    .staggered {
+        padding-top: 15em !important;
+    }
+
+    /* SITE MAIN SECTION */ 
+    section-p {
+        padding: 0 !important;
+    }
+
     /* SITE FOOTER */ 
     .site-footer {
         height: 7.5vh !important;
@@ -90,9 +120,10 @@ body { font-size: 87.5%; }
                 margin: .71em 0 !important;
             }
         }
+
         .reserved {
             padding: .6em !important;
-            font-size: .8em !important;
+            font-size: 1em !important;
         }
 
         .CTA {
@@ -118,4 +149,19 @@ body { font-size: 87.5%; }
             }
         }
     }
+
+    /* SERVICE */ 
+    .service-btn {
+        max-width: 350px !important;
+    }
+
+    .service-btn2 {
+        max-width: 195px !important;
+    }
+
+    .service-btn2-long {
+        max-width: 270px !important;
+    }
+
+
 }

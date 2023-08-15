@@ -143,26 +143,11 @@
             justify-content: center;
         }
     }
-
-
-    .proj01 {
-
-        h1 {
-            line-height: 1.3em;
-            color: $color-brown;
-        }
-
-        h4 {
-            line-height: .2em;
-            color: $color-brown;
-        }
-    }
-
-
 }
 
 /* PROJECT INFORMATION */ 
 .project-container {
+
     .proj-info {
         margin: 4em 0 2em 0;
     }
@@ -186,6 +171,12 @@
             }
         }
     }
+}
+
+
+.staggered {
+    padding-top: 4em;
+    margin-bottom: 4em;
 }
 
 .summary {
@@ -289,18 +280,33 @@
     }
 
     .reserved {
-        padding: 1em;
+        padding: 1.2em .5em 1.2em 1.2em;
         display: flex;
         justify-content: center;
 
         p {
             color: $color-copy-brown;
-            font-size: .8em;
+            font-size: .6em;
         }
     }
 }
 
 /* SECTIONS */ 
+.work-section {
+    h1 {
+        font-size: 6em;
+        position: absolute;
+        top: 850px;
+        right: -80px;
+        transform: rotate(-90deg);  
+          
+    }
+
+    hr {
+        height: .8px;
+        margin: 0;
+    }
+}
 
 section-xs {
     padding: 1em 0;
@@ -325,6 +331,13 @@ section-m {
 
 section {
     padding: 4em 0;
+    min-height: 90vh;
+    display: grid;
+    align-items: center;
+}
+
+section-p {
+    padding: 2em 0;
     min-height: 90vh;
     display: grid;
     align-items: center;
