@@ -73,13 +73,13 @@
 
 .project-section {
     top: 0;
-    background-image: url('/img/AmberAyre_Hero.svg');
+    background-image: url('/img/AmberAyre/AmberAyre_Hero.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.project-hero {
+.project-hero-bg {
     .project-hero,
     .project-subhero {
         display: flex;
@@ -129,6 +129,10 @@
         .row {
             margin-bottom: 0;
         }
+
+        .character {
+            margin-top: 3em;
+        }
         
         .introduction {
             margin-bottom: 2em;
@@ -142,6 +146,7 @@
             display: flex;
             justify-content: center;
         }
+
     }
 }
 
@@ -172,6 +177,19 @@
         }
     }
 }
+
+/* OTHER PROJECTS */ 
+.other-projsection {
+
+    .other {
+        margin: 2em 0;
+        max-width: 250px;
+
+        h3 {
+            font-size: 1.2em;
+        }
+    }
+} 
 
 
 .staggered {
@@ -210,7 +228,7 @@
     align-items: center;
     height: 5vh;
     padding: 0;
-    margin: 0;
+    padding: 1em 0;
 
     li {
         font-family: $font-family-sans;
@@ -238,53 +256,71 @@
     background-color: $color-brown;
     display: flex;
     padding: 1em;
-    justify-content: space-between;
-    height: 5.3em;
+    height: 50vh;
+
+    .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0;
+    }
+
+    .footer-logo {
+        text-align: center;
+        width: 300px;
+
+        img {
+            height: 110px;
+        }
+
+        h3 {
+            color: $color-white;
+            margin: .5em 0 0 0;
+        }
+
+        h5 {
+            color: $color-white;
+        }
+    }
 
     .site-nav {
-        display: flex;
-        height: 44.5px;
+        margin: 4em 0 2em 0;
+
+        h5 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: $color-white;
+        }
 
         .social-links {
             display: flex;
             justify-content: center;
-            margin: 1.2em 0;
-            height: 20px;
+            margin: 0;
+            height: 40px;
 
             a {
                 color: $color-gold;
+                font-size: 1.4em;;
                 text-decoration: none;
-                letter-spacing: .1em;
-                padding: 0 .5em;
-                height: 20px;
+                height: 40px;
         
                 &:hover {
                     color: $color-white;
                 }
             }
         }
-
-        .footer-info {
-            display: grid;
-            justify-content: center;
-            text-align: center;
-
-            img {
-                width: 45px;
-            }
-
-            .footer-white {
-                color: $color-white;
-            }
-        }
     }
-
+    
     .reserved {
-        padding: 1.2em .5em 1.2em 1.2em;
         display: flex;
         justify-content: center;
+        margin-top: 5em;
 
         p {
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
             color: $color-copy-brown;
             font-size: .6em;
         }
