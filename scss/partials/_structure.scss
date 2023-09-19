@@ -219,6 +219,14 @@
 .brand-collection {
     display: flex;
     text-align: center;
+
+    .row {
+        .one-third {
+            .brand-textbox {
+                max-width: 50px;
+            }
+        }
+    }
 }
 
 /* PROJECT FOOTER NAV */ 

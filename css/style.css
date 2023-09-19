@@ -190,6 +190,7 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 1.3em;
   padding: 0;
   max-width: 225px;
   list-style: none;
@@ -761,6 +762,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+}
+.brand-collection .row .one-third .brand-textbox {
+  max-width: 50px;
 }
 
 /* PROJECT FOOTER NAV */
