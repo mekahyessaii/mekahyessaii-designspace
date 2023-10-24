@@ -13,7 +13,7 @@
         cursor: pointer;
 
         svg {
-            fill: $color-brown;
+            fill: $color-black;
 
             rect {
                 transition: .3s all ease-out;
@@ -25,7 +25,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: $color-gold;
+        background-color: $color-green;
         position: fixed;
         top: 0;
         right: 0;
@@ -44,7 +44,7 @@
         margin: 1em 0;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 4vw;
+        font-size: 2vw;
         min-width: 20vw;
         transform: translate(10%,0);
         transition: .3s all ease-out .3s;
@@ -52,11 +52,11 @@
         letter-spacing: .2em;
 
         a {
-            color: $color-brown;
+            color: $color-black;
             font-size: 2.3em;
 
             &:hover {
-                color: $color-gold;
+                color: $color-white;
             }
         }
     }
@@ -117,7 +117,7 @@
             margin: 0 1em 0 6em;
 
             a {
-                color: $color-brown;
+                color: $color-black;
                 font-family: $font-family-sans;
                 
                 &:hover {
@@ -129,6 +129,17 @@
 }
 
 /* FOOTER SITE-NAV */ 
+.site-footer {
+    display: flex;
+
+    .copyright {
+        width: 300px;
+        text-align: left;
+        font-size: .6em;
+        margin: 0 1em;
+    }
+}
+
 .site-footer .site-nav {
     ul {
         margin: 0;

@@ -24,7 +24,7 @@
     }
 
     .logo {
-        max-width: 40px;
+        max-width: 200px;
         margin-top: .2em;
         margin-right: .5em;
         transition: transform .2s ease-in-out;
@@ -147,6 +147,23 @@
             justify-content: center;
         }
 
+    }
+}
+
+/* RESUME PAGE */ 
+.resume-info {
+    margin: 4em 0 2em 0;
+
+    .connect-button {
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .resume {
+        img {
+            box-shadow: 0px 0px 10px $color-black;
+        }
     }
 }
 
@@ -275,7 +292,6 @@
 
     .footer-logo {
         text-align: center;
-        width: 300px;
 
         img {
             height: 110px;
@@ -308,13 +324,13 @@
             height: 40px;
 
             a {
-                color: $color-gold;
+                color: $color-white;
                 font-size: 1.4em;;
                 text-decoration: none;
                 height: 40px;
         
                 &:hover {
-                    color: $color-white;
+                    color: $color-gold;
                 }
             }
         }

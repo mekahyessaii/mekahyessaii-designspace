@@ -550,7 +550,7 @@ body {
 }
 .site-header .logo,
 .site-header-hero .logo {
-  max-width: 40px;
+  max-width: 200px;
   margin-top: 0.2em;
   margin-right: 0.5em;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -701,6 +701,24 @@ body {
           justify-content: center;
 }
 
+/* RESUME PAGE */
+.resume-info {
+  margin: 4em 0 2em 0;
+}
+.resume-info .connect-button {
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.resume-info .resume img {
+  -webkit-box-shadow: 0px 0px 10px rgba(47, 48, 46, 0.8);
+          box-shadow: 0px 0px 10px rgba(47, 48, 46, 0.8);
+}
+
 /* PROJECT INFORMATION */
 .project-container .proj-info {
   margin: 4em 0 2em 0;
@@ -821,7 +839,6 @@ body {
 }
 .site-footer .footer-logo {
   text-align: center;
-  width: 300px;
 }
 .site-footer .footer-logo img {
   height: 110px;
@@ -857,13 +874,13 @@ body {
   height: 40px;
 }
 .site-footer .site-nav .social-links a {
-  color: rgb(235, 201, 127);
+  color: rgb(241, 240, 243);
   font-size: 1.4em;
   text-decoration: none;
   height: 40px;
 }
 .site-footer .site-nav .social-links a:hover {
-  color: rgb(241, 240, 243);
+  color: rgb(235, 201, 127);
 }
 .site-footer .reserved {
   display: -webkit-box;
@@ -967,7 +984,7 @@ section-p {
   cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
-  fill: rgb(122, 102, 97);
+  fill: rgba(47, 48, 46, 0.8);
 }
 .site-header .site-nav .menu-button svg rect {
   -webkit-transition: 0.3s all ease-out;
@@ -977,7 +994,7 @@ section-p {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgb(235, 201, 127);
+  background-color: rgb(80, 107, 95);
   position: fixed;
   top: 0;
   right: 0;
@@ -1006,7 +1023,7 @@ section-p {
   margin: 1em 0;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 4vw;
+  font-size: 2vw;
   min-width: 20vw;
   -webkit-transform: translate(10%, 0);
           transform: translate(10%, 0);
@@ -1016,11 +1033,11 @@ section-p {
   letter-spacing: 0.2em;
 }
 .site-header .site-nav li a {
-  color: rgb(122, 102, 97);
+  color: rgba(47, 48, 46, 0.8);
   font-size: 2.3em;
 }
 .site-header .site-nav li a:hover {
-  color: rgb(235, 201, 127);
+  color: rgb(241, 240, 243);
 }
 .site-header .site-nav[data-navstate=open] .menu-button {
   position: fixed;
@@ -1079,7 +1096,7 @@ section-p {
     margin: 0 1em 0 6em;
   }
   .site-header .site-nav li a {
-    color: rgb(122, 102, 97);
+    color: rgba(47, 48, 46, 0.8);
     font-family: "brother-1816", Helvetica, Arial, sans-serif;
   }
   .site-header .site-nav li a:hover {
@@ -1088,6 +1105,18 @@ section-p {
 }
 
 /* FOOTER SITE-NAV */
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.site-footer .copyright {
+  width: 300px;
+  text-align: left;
+  font-size: 0.6em;
+  margin: 0 1em;
+}
+
 .site-footer .site-nav ul {
   margin: 0;
   padding: 0;
