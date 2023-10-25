@@ -18,11 +18,18 @@ body {
 
 .proj-container {
     margin: 0 auto;
+    min-width: auto;
     max-width: 500px;
     padding: 0 1em;
 }
 
 .footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1em;
+}
+
+.projcontainer {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 1em;
@@ -128,6 +135,15 @@ body { font-size: 87.5%; }
             max-width: 300px !important;
         }
     } 
+
+    /* AMBER AYRE SUBPAGE */ 
+    /* PROCESS SECTION */ 
+    .process {
+        .discovery_phase {
+            display: flex !important;
+            max-width: 1200px !important;
+        }
+    }
 
     /* SITE FOOTER */ 
     .site-footer {
