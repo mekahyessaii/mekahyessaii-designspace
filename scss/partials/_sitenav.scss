@@ -59,6 +59,12 @@
                 color: $color-white;
             }
         }
+
+        .selected {
+            padding: .3em 0;
+            color: $color-green;
+            border-bottom: 2px solid $color-green;
+        }
     }
 
     &[data-navstate="open"] {

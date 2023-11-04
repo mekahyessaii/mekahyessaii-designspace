@@ -145,6 +145,79 @@ body { font-size: 87.5%; }
         }
     }
 
+    /* ABOUT ME PAGE */ 
+    .bio {
+        padding-left: 3em !important;
+        margin-bottom: 3em !important;
+
+        .sub-title {
+            justify-content: flex-start !important;
+        }
+    
+        .changing-text {
+                justify-content: flex-start !important;
+    
+                .roles {
+                    p {
+                        justify-content: flex-start !important;
+                    }
+    
+                }
+        }
+        
+        @keyframes moveUp{
+            0%{
+                transform: translateY(-20%);
+            }
+        
+            33%{
+                transform: translateY(-160%);
+            }
+        
+            66%{
+                transform: translateY(-290%);
+            }
+        
+            100% {
+                transform: translateY(-20%);
+            }
+        }
+    
+        .bio-p {
+            justify-content: flex-start !important;
+        }
+    
+        .bio-p-location {
+            justify-content: flex-start !important;
+        }
+    
+        .social-links {
+            justify-content: flex-start !important;
+    
+            a {
+                padding: 0 !important;
+        
+                &:hover {
+                    color: $color-gold;
+                }
+            }
+        }
+    }
+
+    .contactme {
+        justify-content: flex-start !important;
+        padding-left: 3em !important;
+    
+        .connect-button {
+            justify-content: flex-start;
+            cursor: pointer;
+    
+            .button {
+                margin: 0 !important;
+            }
+        }
+    }
+
     /* SITE FOOTER */ 
     .site-footer {
         height: 30vh !important;
@@ -159,6 +232,16 @@ body { font-size: 87.5%; }
 
             .footer-logo {
                 width: 300px !important;
+
+
+                .copyright-container {
+                    display: inline !important;
+                    justify-content: left !important;
+                    
+                    .copyright {
+                        text-align: left !important;
+                    }
+                }
             }
         }
 
