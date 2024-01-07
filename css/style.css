@@ -94,10 +94,7 @@ hr {
 }
 
 .home-hr {
-  border: 0;
-  height: 3px;
-  background-color: rgb(122, 102, 97);
-  margin: 0 0 2em 0;
+  margin-bottom: 2em;
 }
 
 /* SECTION HEADING */
@@ -108,6 +105,11 @@ hr {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 3em 0;
+}
+
+/* TEXT COLOR */
+.white-text {
+  color: rgb(241, 240, 243);
 }
 
 .hide-visually {
@@ -355,6 +357,10 @@ body {
 
   .staggered {
     padding-top: 15em !important;
+  }
+
+  .black-bg .section_border {
+    top: -133px !important;
   }
 
   /* SITE MAIN SECTION */
@@ -687,6 +693,10 @@ body {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
+.section_border {
+  margin: 2em 0;
+}
+
 /* HERO SECTION */
 .hero {
   background-color: rgb(241, 240, 243);
@@ -960,22 +970,114 @@ body {
 }
 
 /* PROJECT INFORMATION */
-.project-container .proj-info {
+.about-green-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(80, 107, 95);
+}
+.about-green-bg .Brand_Pattern_01 {
+  margin: 0 2em 0 0;
+  width: 40%;
+  height: 850px;
+  background: url("/img/Patterns/Pattern_02.2.svg");
+  background-position: center;
+  background-size: cover;
+}
+.about-green-bg .Currents {
+  margin: 2em;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  width: 60%;
+  height: 850px;
+}
+.about-green-bg .Currents h6 {
+  color: rgb(235, 201, 127);
+}
+.about-green-bg .Currents .img-favorites h3 {
+  color: rgb(241, 240, 243);
+}
+.about-green-bg .Currents .img-favorites .row .one-third .container {
+  position: relative;
+  width: 100%;
+}
+.about-green-bg .Currents .img-favorites .row .one-third .fav-image-card {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.about-green-bg .Currents .img-favorites .row .one-third .fav-info {
+  background-color: rgb(122, 102, 97);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.about-green-bg .Currents .img-favorites .row .one-third .fav-info h3 {
+  margin: 0;
+  text-align: center;
+  padding: 1em;
+  color: rgb(241, 240, 243);
+  font-size: 0.8em;
+}
+.about-green-bg .Currents .img-favorites .row .one-third .container:hover .fav-image-card {
+  opacity: 0.8;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+.about-green-bg .Currents .img-favorites .row .one-third .container:hover .fav-info {
+  opacity: 1;
+}
+
+.black-bg {
+  background-color: rgba(47, 48, 46, 0.8);
+}
+.black-bg .section_border {
+  width: 100%;
+  position: relative;
+  top: -73.5px;
+  margin: 0 auto;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+}
+.black-bg .home-proj-title h1 {
+  color: rgb(235, 201, 127);
+  font-size: 4em;
+  text-align: center;
+}
+.black-bg .project-container {
+  background-color: rgba(47, 48, 46, 0.8);
+}
+.black-bg .project-container .proj-info {
   margin: 4em 0 2em 0;
 }
-.project-container hr {
+.black-bg .project-container hr {
   margin: 2em 0 1em 0;
   width: 20px;
 }
-.project-container .project-stats {
+.black-bg .project-container .project-stats {
   margin: 0;
 }
-.project-container .project-stats .status {
+.black-bg .project-container .project-stats .status {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.project-container .project-stats .status h6 {
+.black-bg .project-container .project-stats .status h6 {
   margin-right: 1em;
   opacity: 0.5;
   text-transform: uppercase;
@@ -1027,7 +1129,8 @@ body {
   position: relative;
   margin: auto;
 }
-.process .ideation_phase .ideation_img .prev, .process .ideation_phase .ideation_img .next {
+.process .ideation_phase .ideation_img .prev,
+.process .ideation_phase .ideation_img .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
