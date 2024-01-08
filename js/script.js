@@ -80,5 +80,4 @@ $(function(){
     $(this).attr('src','img/Personal_Logo.svg');
   }
   });
-  
 });

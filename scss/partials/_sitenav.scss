@@ -94,6 +94,11 @@
             transform: translate(0,0);
             opacity: 1;
         }
+
+        .selected {
+            padding: .3em 0;
+            color: $color-gold;
+        }
     }
 
     /* BIG SCREENS */ 

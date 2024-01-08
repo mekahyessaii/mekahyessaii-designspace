@@ -173,86 +173,92 @@
 }
 
 /* ABOUT ME PAGE */ 
-.bio {
-    margin-bottom: 3em;
+.project-container {
+    width: 480px;
+    display: inline-block;
 
-    .sub-title {
-        display: flex;
-        justify-content: center;
-    }
-
-    .changing-text {
-        display: flex;
-        justify-content: center;
-        height: 60px;
-
-        .texts-container{
+    .bio {
+        margin-bottom: 3em;
+    
+        .sub-title {
             display: flex;
-            overflow: hidden;
+            justify-content: center;
+        }
+    
+        .changing-text {
+            display: flex;
+            justify-content: center;
             height: 60px;
-            color: $color-green;
-
-            .roles {
-                margin: 0;
-
-                p {
-                    display: flex;
-                    justify-content: center;
-                    animation: moveUp 8s infinite;
-                    font-size: 3em;
+    
+            .texts-container{
+                display: flex;
+                overflow: hidden;
+                height: 60px;
+                color: $color-green;
+    
+                .roles {
+                    margin: 0;
+    
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        animation: moveUp 8s infinite;
+                        font-size: 3em;
+                    }
+    
                 }
-
+            }
+        }
+        
+        @keyframes moveUp{
+            0%{
+                transform: translateY(-12%);
+            }
+        
+            33%{
+                transform: translateY(-140%);
+            }
+        
+            66%{
+                transform: translateY(-270%);
+            }
+        
+            100% {
+                transform: translateY(-12%);
+            }
+        }
+    
+        .bio-p {
+            display: flex;
+            justify-content: center;
+            margin: .1em 0;
+            font-size: 3em;
+            color: $color-black;
+        }
+    
+        .bio-p-location {
+            display: flex;
+            justify-content: center;
+            margin: .5em 0;
+            font-size: 1em;
+            color: $color-black;
+        }
+    }
+    
+    .contactme {
+        display: flex;
+        justify-content: center;
+    
+        .connect-button {
+            justify-content: flex-start;
+            cursor: pointer;
+    
+            .button {
+                margin: .5em;
             }
         }
     }
-    
-    @keyframes moveUp{
-        0%{
-            transform: translateY(-10%);
-        }
-    
-        33%{
-            transform: translateY(-145%);
-        }
-    
-        66%{
-            transform: translateY(-280%);
-        }
-    
-        100% {
-            transform: translateY(-10%);
-        }
-    }
 
-    .bio-p {
-        display: flex;
-        justify-content: center;
-        margin: .1em 0;
-        font-size: 3em;
-        color: $color-black;
-    }
-
-    .bio-p-location {
-        display: flex;
-        justify-content: center;
-        margin: .5em 0;
-        font-size: 1em;
-        color: $color-black;
-    }
-}
-
-.contactme {
-    display: flex;
-    justify-content: center;
-
-    .connect-button {
-        justify-content: flex-start;
-        cursor: pointer;
-
-        .button {
-            margin: .5em;
-        }
-    }
 }
 
 /* PROJECT INFORMATION */ 
@@ -260,10 +266,19 @@
     display: flex;
     background-color: $color-green;
 
+    .section_border {
+        width: 100%;
+        position: absolute;
+        top: 88.15vh;
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+    }
+
     .Brand_Pattern_01 {
         margin: 0 2em 0 0;
-        width: 40%;
-        height: 850px;
+        width: 20%;
+        height: 200vh;
         background: url('/img/Patterns/Pattern_02.2.svg');
         background-position: center;
         background-size: cover;
@@ -275,7 +290,7 @@
         justify-content: center;
         text-align: left;
         width: 60%;
-        height:850px;
+        height: 195vh;
 
         h6 {
             color: $color-gold;
@@ -291,7 +306,11 @@
                     .container {
                         position: relative;
                         width: 100%;
-                      }
+                    }
+
+                    .fav-song {
+                        margin-top: 3em;
+                    }
                       
                     .fav-image-card {
                         opacity: 1;
@@ -345,7 +364,7 @@
 }
 
 .black-bg {
-    background-color: $color-black;
+    background-color: $color-darkblack;
 
     .section_border {
         width: 100%;
@@ -575,7 +594,7 @@
 
 /* SITE FOOTER */ 
 .site-footer {
-    background-color: $color-brown;
+    background-color: $color-black;
     display: flex;
     padding: 1em;
     height: 50vh;
