@@ -91,6 +91,7 @@ hr {
   height: 3px;
   background-color: rgb(122, 102, 97);
   margin: 3em 0;
+  width: 470px;
 }
 
 .home-hr {
@@ -273,10 +274,43 @@ body {
 }
 /* MEDIA QUERIES FOR LARGE SCREENS*/
 @media (min-width: 768px) {
+  /* CAROUSEL */
+  .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__next > label:nth-child(1), .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__prev > label:nth-child(9) {
+    opacity: 1 !important;
+    z-index: 3;
+  }
+
+  *,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .carousel__prev > label, .carousel__next > label {
+    top: 50% !important;
+  }
+  .carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus {
+    opacity: 0.5 !important;
+  }
+  .carousel__nav {
+    bottom: 5% !important;
+  }
+
   /* HEADER */
   .site-header .logo,
 .site-header-hero .logo {
     margin-top: 0;
+  }
+
+  /* HORIZONTAL LINE */
+  hr {
+    width: 725px !important;
   }
 
   /* HERO */
@@ -381,12 +415,61 @@ body {
   }
 
   /* AMBER AYRE SUBPAGE */
+  .challenge-solution {
+    max-width: 1000px !important;
+    border: none !important;
+    padding-top: 0 !important;
+  }
+  .challenge-solution .row .one-half .cs {
+    margin: 0 1em !important;
+    height: 20vh !important;
+    max-width: 500px !important;
+  }
+  .challenge-solution .row .one-half .cs_solution {
+    margin-left: 2em !important;
+  }
+
+  .vl {
+    height: 200px !important;
+    opacity: 1 !important;
+  }
+
+  .ba_img {
+    position: static !important;
+    width: 100% !important;
+  }
+  .ba_img img {
+    margin: 0 0.5em !important;
+  }
+
   /* PROCESS SECTION */
   .process .discovery_phase {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     max-width: 1200px !important;
+  }
+  .process .discovery_phase .discovery_info {
+    max-width: 500px !important;
+    margin: 1em !important;
+  }
+  .process .discovery_phase .discovery_img {
+    max-width: 500px !important;
+    margin: 1em !important;
+  }
+  .process .discovery_phase .title {
+    width: 400px !important;
+    top: 10% !important;
+    left: 0 !important;
+    background-color: rgb(80, 107, 95);
+    padding: 4em;
+    border-radius: 2%;
+  }
+  .process .discovery_phase .title h4 {
+    color: rgb(235, 201, 127);
+  }
+  .process .discovery_phase .title p {
+    color: rgb(241, 240, 243);
   }
 
   /* ABOUT ME PAGE */
@@ -832,6 +915,7 @@ body {
 .proj-scroll-down {
   position: absolute;
   left: 50%;
+  top: 80%;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -1164,6 +1248,7 @@ body {
   background-color: rgba(47, 48, 46, 0.8);
 }
 .black-bg .project-container .proj-info {
+  width: 500px;
   margin: 4em 0 2em 0;
 }
 .black-bg .project-container hr {
@@ -1185,12 +1270,58 @@ body {
   font-size: 0.75em;
 }
 
+.challenge-solution {
+  max-width: 500px;
+  border: 1px solid rgb(122, 102, 97);
+  padding-top: 8em;
+}
+.challenge-solution .row .one-half .cs {
+  margin: 0 4em;
+  height: 20vh;
+  max-width: 500px;
+}
+.challenge-solution .cs_title {
+  top: 0%;
+}
+.vl {
+  border-left: 3px solid rgb(80, 107, 95);
+  height: 0;
+  opacity: 0;
+}
+
+.brand_assets {
+  max-width: 1400px;
+}
+
+.ba {
+  position: relative;
+  top: -100px;
+  left: -10px;
+  width: 60%;
+  background-color: rgb(80, 107, 95);
+  padding: 4em;
+  border-radius: 10px;
+}
+.ba .ba_title h4 {
+  color: rgb(235, 201, 127);
+}
+.ba .ba_info {
+  color: rgb(241, 240, 243);
+}
+
+.ba_img {
+  position: static;
+  width: 100%;
+  margin: 1em 0;
+}
+
 .process .discovery_phase {
   display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 900px;
+  margin-bottom: 4em;
 }
 .process .discovery_phase .discovery_info {
   max-width: 500px;
@@ -1199,6 +1330,20 @@ body {
 .process .discovery_phase .discovery_img {
   max-width: 500px;
   margin: 1em;
+}
+.process .discovery_phase .title {
+  position: relative;
+  top: 30%;
+  left: 0;
+  background-color: rgb(80, 107, 95);
+  padding: 4em;
+  border-radius: 2%;
+}
+.process .discovery_phase .title h4 {
+  color: rgb(235, 201, 127);
+}
+.process .discovery_phase .title p {
+  color: rgb(241, 240, 243);
 }
 .process .ideation_phase {
   display: -webkit-box;
@@ -1211,6 +1356,9 @@ body {
 }
 .process .ideation_phase .ideation_info {
   max-width: 600px;
+}
+.process .ideation_phase .ideation_info .title {
+  margin-bottom: 4em;
 }
 .process .ideation_phase .ideation_img {
   max-width: 550px;
@@ -1529,6 +1677,200 @@ section-p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/* CAROUSEL */
+.carousel > input[type=radio]:nth-child(9):checked ~ .carousel__next > label:nth-child(1), .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__prev > label:nth-child(8), .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__next > label:nth-child(9), .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__prev > label:nth-child(7), .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__next > label:nth-child(8), .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6), .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__next > label:nth-child(7), .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__prev > label:nth-child(9) {
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carousel > input[type=radio] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+}
+.carousel > input[type=radio]:checked ~ .carousel__items .carousel__item,
+.carousel > input[type=radio]:checked ~ .carousel__prev > label,
+.carousel > input[type=radio]:checked ~ .carousel__next > label {
+  opacity: 0;
+}
+.carousel > input[type=radio]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(7) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(8) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(8):checked ~ .carousel__nav > label:nth-child(8) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(9) {
+  opacity: 1;
+}
+.carousel > input[type=radio]:nth-child(9):checked ~ .carousel__nav > label:nth-child(9) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+.carousel__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+.carousel__item img {
+  width: 100%;
+  vertical-align: middle;
+}
+.carousel__prev > label, .carousel__next > label {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+.carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus {
+  opacity: 0.5 !important;
+}
+.carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+.carousel__prev > label:before, .carousel__next > label:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(80, 107, 95)), color-stop(10%, rgb(80, 107, 95)), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(rgb(80, 107, 95)), color-stop(10%, rgb(80, 107, 95)), color-stop(10%, rgba(51, 51, 51, 0)));
+  background: linear-gradient(to top, rgb(80, 107, 95) 0%, rgb(80, 107, 95) 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, rgb(80, 107, 95) 0%, rgb(80, 107, 95) 10%, rgba(51, 51, 51, 0) 10%);
+  width: 60%;
+  height: 60%;
+  top: 100%;
+}
+.carousel__prev > label {
+  left: 2%;
+}
+.carousel__prev > label:before {
+  left: 35%;
+  top: 100%;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.carousel__next > label {
+  right: 2%;
+}
+.carousel__next > label:before {
+  left: 10%;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+.carousel__nav {
+  position: absolute;
+  bottom: 55%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+.carousel__nav > label {
+  border: 1px solid rgb(80, 107, 95);
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.125%;
+  width: 20px;
+  height: 20px;
+}
+
+/* HEADER */
+.site-header .logo,
+.site-header-hero .logo {
+  margin-top: 0;
 }
 
 /* SITE-HEADER SITE-NAV */
