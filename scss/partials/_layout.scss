@@ -57,22 +57,31 @@ body { font-size: 87.5%; }
 
 /* MEDIA QUERIES FOR LARGE SCREENS*/ 
 @media (min-width: $breakpoint-small) {
+    .home-hr {
+        width: 100% !important;
+    }
+
     /* CAROUSEL */ 
     %animation-default {
         opacity: 1 !important;
         z-index: 3;
     }
+
+    .logo_process {
+        max-width: 100% !important;
+    }
     
     @mixin carousel($items, $animation: 'default') {
         .carousel {
-        width: 100%;
-        position: relative;
-        overflow: hidden;
+            height: 500px !important;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
     
         &__prev,
         &__next {
             > label {
-                top: 50% !important;
+                top: 40% !important;
 
                 &:hover,
                 &:focus {
@@ -82,7 +91,7 @@ body { font-size: 87.5%; }
         }
     
             &__nav {
-                bottom: 5% !important;
+                bottom: 20% !important;
             }
         }
     }
@@ -176,9 +185,8 @@ body { font-size: 87.5%; }
 
     /* OTHER PROJECTS */ 
     .other-projsection {
-        margin: 0 !important;
         display: flex !important;
-        margin: 0 300px !important;
+        margin: 0 100px !important;
 
         .other {
             max-width: 300px !important;
@@ -210,6 +218,9 @@ body { font-size: 87.5%; }
         height: 200px !important;
         opacity: 1 !important;
     }
+    .ba {
+        width: 60% !important;
+    }
 
     .ba_img {
         position: static !important;
@@ -219,7 +230,6 @@ body { font-size: 87.5%; }
             margin: 0 .5em !important;
         }
     }
-
     /* PROCESS SECTION */ 
     .process {
         .discovery_phase {
@@ -252,6 +262,154 @@ body { font-size: 87.5%; }
                     color: $color-white;
                 }
             }
+        }
+        
+        .ideation_phase {
+            display: flex;
+            justify-content: space-between;
+            margin: 4em 0;
+    
+            .ideation_info {
+                max-width: 600px;
+    
+                .title {
+                    background-color: $color-green;
+                    padding: 4em;
+                    border-radius: 10px;
+                    position: relative;
+                    top: 100%;
+                    
+                    .lp_lg_title {
+                        h2 {
+                            color: $color-gold;
+                        }
+                    }
+    
+                    h4 {
+                        color: $color-gold;
+                    }
+    
+                    p {
+                        color: $color-white;
+                    }
+                }
+            }
+            
+            .ideation_img {
+                max-width: 550px;
+    
+                img {
+                    vertical-align: middle;
+                }
+                
+                /* Slideshow container */
+                .slideshow-container {
+                    width: 550px;
+                    position: relative;
+                    margin: auto;
+                }
+                
+                /* Next & previous buttons */
+                .prev, 
+                .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: $color-green;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+                
+                /* Position the "next button" to the right */
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+                
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                    background-color: $color-green;
+                }
+                
+                /* Number text (1/3 etc) */
+                .numbertext {
+                    color: $color-black;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                }
+                
+                /* The dots/bullets/indicators */
+                .dot {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: $color-green;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                
+                .active, .dot:hover {
+                    background-color: $color-brown;
+                }
+                
+                /* Fading animation */
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+                
+                @keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                }
+                
+                img {
+                    max-width: 1000px;
+                }
+            }
+        }
+    }
+    
+    .lp {
+        width: 80% !important;
+
+        .lp_lg_title {
+            h2 {
+                color: $color-gold;
+            }
+        }
+    
+        .lp_title {
+            h4 {
+                color: $color-gold;
+            }
+        }
+    
+        .lp_info {
+            color: $color-white;
+        }
+        
+    }
+    
+    .resolution  {
+
+        .row {
+            padding-top: 2em !important;
+        }
+
+        .resolution_img {
+            display: flex !important;
+            justify-content: center !important;
         }
     }
 
