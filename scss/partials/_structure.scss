@@ -468,22 +468,73 @@
                 color: $color-white;
             }
         }
+    }
+
+    .ma_process {
+        width: 98.6%;
+        margin: 0;
+
+        .ma_lg_title {
+
+            h2 {
+                color: $color-black;
+            }
+        }
+
+        .ma_title {
+
+            h4 {
+                color: $color-black;
+            }
+        }
+
+        .ma_info {
+
+            p {
+                color: $color-black;
+            }
+        }
 
         img {
             border-radius: 10px;
         }
     }
-
+    
     .ma_final {
         img {
             border-radius: 10px;
         }
     }
+
 }
 
 .schematic_process {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
     .sp {
         margin-bottom: 2em;
+
+        .sp_lg_title {
+            h2 {
+                color: $color-black;
+            }
+        }
+    
+        .sp_title {
+            h4 {
+                color: $color-black;
+            }
+        }
+    
+        .sp_info {
+            color: $color-black;
+        }
+    }
+
+    .sp_img {
+        margin: 4em;
     }
 }
 
@@ -586,7 +637,35 @@
     
 }
 
+/* FOR VIDEOS */ 
+.lp_video {
+    .lp_title {
+        h4 {
+            color: $color-black;
+        }
+    }
+
+    .lp_info {
+        color: $color-black;
+    }
+
+    video {
+        border-radius: 10px;
+    }
+    
+}
+
 .lp_img {
+    position: static;
+    width: 100%;
+    margin: 1em 0;
+
+    video {
+        border-radius: 10px;
+    }
+}
+
+.lp_video {
     position: static;
     width: 100%;
     margin: 1em 0;
@@ -603,6 +682,10 @@
 
     .resolution_img {
         background-color: $color-white;
+
+        img {
+            width: 92%;
+        }
     }
 }
 
@@ -631,6 +714,10 @@
             padding: 4em;
             border-radius: 10px;
 
+            h2 {
+                color: $color-gold;
+            }
+
             h4 {
                 color: $color-gold;
             }
@@ -639,6 +726,41 @@
                 color: $color-white;
             }
         }
+
+        .title_video {
+            position: relative;
+            top: 0;
+            width: 100%;
+            left: 0;
+            background-color: $color-green;
+            padding: 4em;
+            border-radius: 10px;
+
+            h2 {
+                color: $color-gold;
+            }
+
+            h4 {
+                color: $color-gold;
+            }
+
+            p {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+/* WE SOURCE PROJECT */ 
+.ws_info_video {
+    margin-bottom: 1em;
+    width: auto;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+
+    .ws_video {
+
     }
 }
 
