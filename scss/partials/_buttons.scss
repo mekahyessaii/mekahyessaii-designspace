@@ -21,10 +21,8 @@
 /* SERVICE */ 
 .service-btn {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
-    max-width: 300px;
     list-style: none;
 
     li {
@@ -35,15 +33,14 @@
         margin: .2em;
         padding: .5em 1em;
         font-size: .8em;
+        width: auto;
     }
 }
 
 .service-btn2 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
-    max-width: 170px;
     list-style: none;
 
     li {
@@ -51,18 +48,18 @@
         background-color: $color-green;
         color: $color-gold;
         border-radius: 5em;
+        margin: .2em;
         padding: .5em 1em;
         font-size: .8em;
+        width: auto;
     }
 }
 
 .service-btn2-long {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 1.3em;
     padding: 0;
-    max-width: 225px;
     list-style: none;
 
     li {
@@ -70,7 +67,9 @@
         background-color: $color-green;
         color: $color-gold;
         border-radius: 5em;
+        margin: .2em;
         padding: .5em 1em;
         font-size: .8em;
+        width: auto;
     }
 }

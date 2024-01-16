@@ -123,6 +123,16 @@
       }
 }
 
+/* BACKGROUND COLOR */ 
+.dark-bg {
+    background-color: $color-darkblack;
+    padding: 0;
+}
+
+.green-bg {
+    background-color: $color-green;
+}
+
 /* SITE MAIN */ 
 .site-main {
     background-color: $color-white;
@@ -754,28 +764,53 @@
 /* WE SOURCE PROJECT */ 
 .ws_info_video {
     margin-bottom: 1em;
-    width: auto;
-    height: 250px;
     display: flex;
     justify-content: center;
 
     .ws_video {
-
+        iframe {
+            width: 450px;
+            height: 400px;
+        }
     }
 }
 
 /* OTHER PROJECTS */ 
-.other-projsection {
+.mw {
+    display: inline-block;
+    padding: 2em;
+    border-radius: 10px;
 
-    .other {
-        margin: 2em 0;
-        max-width: 250px;
+    .mw_title {
+        margin-bottom: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        h3 {
-            font-size: 1.2em;
+        h2 {
+            color: $color-gold;
         }
     }
-} 
+
+    .mw_links {
+        display: inline-block;
+        max-width: 1000px;
+
+        .other {
+            max-width: 500px;
+            margin: 0 4em;
+
+            h3 {
+                color: $color-white;
+            }
+
+            .home-hr {
+                margin: 1em 0 1.5em 0;
+                background-color: $color-gold;
+            }
+        }
+    }
+}
 
 
 .staggered {
@@ -799,6 +834,44 @@
             color: $color-gold;
             margin: 1em;
         }
+    }
+}
+
+.sum_bg {
+    background-color: $color-green;
+
+    .sum {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 40vh;
+
+        .sum_current,
+        .sum_history {
+            margin: 1em 0;
+        }
+
+        h1 {
+            color: $color-gold;
+        }
+    
+        .sum_title {
+
+            h4 {
+                color: $color-gold;
+            }
+        }
+
+        .sum_info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .sum_background_info {
+                margin: 0;
+                color: $color-white;
+            }
+        }  
     }
 }
 

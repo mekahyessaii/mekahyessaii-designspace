@@ -17,9 +17,10 @@ body {
 }
 
 .proj-container {
+    display: flex;
     margin: 0 auto;
     min-width: auto;
-    max-width: 500px;
+    max-width: 700px;
     padding: 0 1em;
 }
 
@@ -189,11 +190,11 @@ body { font-size: 87.5%; }
         margin: 0 100px !important;
 
         .other {
-            max-width: 300px !important;
+            max-width: 400px !important;
         }
     } 
 
-    /* AMBER AYRE SUBPAGE */
+    /* SUBPAGE */
     .challenge-solution {
         max-width: 1000px !important;
         border: none !important;
@@ -230,6 +231,39 @@ body { font-size: 87.5%; }
             margin: 0 .5em !important;
         }
     }
+
+    /* SUMMARY */ 
+    .sum_bg {
+        .sum {
+            display: inline-block !important;
+            justify-content: center;
+            text-align: center;
+            height: 40vh;
+
+            .sum_current,
+            .sum_history {
+                margin: 1em 0;
+            }
+
+            h1 {
+                color: $color-gold;
+            }
+        
+            .sum_title {
+
+                h4 {
+                    color: $color-gold;
+                }
+            }
+            
+            .sum_background_info {
+                margin: 0;
+                color: $color-white;
+            }
+                
+        }
+    }
+
     /* PROCESS SECTION */ 
     .process {
         .discovery_phase {
@@ -240,9 +274,31 @@ body { font-size: 87.5%; }
                 max-width: 500px !important;
                 margin: 1em !important;
             }
+
+            .discovery_info_long {
+                max-width: 600px !important;
+                margin: 1em !important;
+            }
     
             .discovery_img {
                 max-width: 500px !important;
+                margin: 1em !important;
+            }
+    
+            .discovery_img_02 {
+                position: relative !important;
+                max-width: 600px !important;
+                right: 80px !important;
+                top: -80px !important;
+                margin: 1em !important;
+                z-index: 1 !important;
+            }
+    
+            .discovery_img_02_1 {
+                position: relative !important;
+                max-width: 600px !important;
+                right: 80px !important;
+                top: 80px !important;
                 margin: 1em !important;
             }
 
@@ -269,7 +325,7 @@ body { font-size: 87.5%; }
                 }
             }
         }
-        
+
         .ideation_phase {
             display: flex;
             justify-content: space-between;
@@ -385,6 +441,16 @@ body { font-size: 87.5%; }
             }
         }
     }
+
+    .ws_info_video {
+
+        .ws_video {
+            iframe {
+                width: 750px !important;
+                height: 450px !important;
+            }
+        }
+    }
     
     .lp {
         width: 80% !important;
@@ -463,6 +529,31 @@ body { font-size: 87.5%; }
             }
         }
     }
+
+    /* OTHER PROJECTS */
+    .mw {
+        .mw_title {
+            margin-top: 4em !important;
+        }
+
+        .mw_links {
+            display: flex !important;
+            
+            .other {
+                max-width: 500px;
+                margin: 0 4em;
+
+                h3 {
+                    font-size: 1.1em;
+                }
+
+                .home-hr {
+                    margin: 1em 0 1.5em 0;
+                    background-color: $color-gold;
+                }
+            }
+        }
+}
 
     /* ABOUT ME PAGE */ 
     .project-container {
@@ -686,19 +777,4 @@ body { font-size: 87.5%; }
             }
         }
     }
-
-    /* SERVICE */ 
-    .service-btn {
-        max-width: 350px !important;
-    }
-
-    .service-btn2 {
-        max-width: 195px !important;
-    }
-
-    .service-btn2-long {
-        max-width: 270px !important;
-    }
-
-
 }
