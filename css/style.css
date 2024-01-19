@@ -478,6 +478,29 @@ body {
     color: rgb(241, 240, 243);
   }
 
+  /* PODCASTS */
+  .podcast {
+    margin: 2em 4em 0 4em !important;
+    padding: 0 !important;
+  }
+  .podcast .pod-refer {
+    margin: 0 0.5em !important;
+    -webkit-box-align: top !important;
+        -ms-flex-align: top !important;
+            align-items: top !important;
+    height: 400px !important;
+  }
+  .podcast .pod-refer .episode_info h5 {
+    color: rgb(235, 201, 127);
+    margin-top: 1em;
+    text-align: left;
+  }
+  .podcast .pod-refer .episode_info .episode-desc {
+    color: rgb(241, 240, 243);
+    margin: 0.5em 0;
+    text-align: left;
+  }
+
   /* PROCESS SECTION */
   .process .discovery_phase {
     display: -webkit-box !important;
@@ -1789,6 +1812,60 @@ body {
 .ws_info_video .ws_video iframe {
   width: 450px;
   height: 400px;
+}
+
+/* PODCASTS */
+.podcast_title {
+  margin-top: 2em;
+}
+.podcast_title h2 {
+  color: rgb(235, 201, 127);
+  text-align: center;
+}
+
+.podcast {
+  margin: 0 2em;
+  padding: 1em 1em 0 1em;
+}
+.podcast .pod-refer {
+  margin: 1em 0;
+}
+.podcast .pod-refer .episode {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(75, 75, 77);
+  -webkit-box-shadow: 0px 0px 10px 1px rgb(75, 75, 77);
+          box-shadow: 0px 0px 10px 1px rgb(75, 75, 77);
+}
+.podcast .pod-refer .episode img {
+  display: block;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+.podcast .pod-refer .episode:hover img {
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.podcast .pod-refer .episode_info h5 {
+  color: rgb(235, 201, 127);
+  margin-top: 1em;
+  text-align: left;
+}
+.podcast .pod-refer .episode_info .episode-desc {
+  color: rgb(241, 240, 243);
+  margin: 0.5em 0;
+  text-align: left;
 }
 
 /* OTHER PROJECTS */

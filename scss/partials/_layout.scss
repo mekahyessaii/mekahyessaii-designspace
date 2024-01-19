@@ -264,6 +264,34 @@ body { font-size: 87.5%; }
         }
     }
 
+    /* PODCASTS */ 
+    .podcast {
+        margin: 2em 4em 0 4em !important;
+        padding: 0 !important;
+
+        .pod-refer {
+            margin: 0 .5em !important;
+            align-items: top !important;
+            height: 400px !important;
+
+            .episode_info {
+                h5 {
+                    color: $color-gold;
+                    margin-top: 1em;
+                    text-align: left;
+                }
+
+                .episode-desc {
+                    color: $color-white;
+                    margin: .5em 0;
+                    text-align: left;
+                }
+            }
+
+        }   
+    }
+
+
     /* PROCESS SECTION */ 
     .process {
         .discovery_phase {
