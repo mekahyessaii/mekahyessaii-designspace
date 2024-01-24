@@ -210,6 +210,11 @@ img {
   height: auto;
 }
 
+.scaled_logo video {
+  width: 100%;
+  height: 100%;
+}
+
 /* RESET BODY */
 body {
   margin: 0;
@@ -1132,7 +1137,6 @@ body {
 
 /* HERO SECTION */
 .hero {
-  background-color: rgb(241, 240, 243);
   color: rgba(47, 48, 46, 0.8);
   text-align: center;
   padding: 6em 0;
@@ -1155,14 +1159,6 @@ body {
 .hero .home-container-amber {
   background-image: url("/img/AmberAyre_Hero.jpg");
   background-position: center;
-  background-size: cover;
-}
-
-.project-section {
-  top: 0;
-  background-image: url("/img/AmberAyre/AmberAyre_Hero.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -1248,7 +1244,11 @@ body {
 
 /* SITE MAIN */
 .site-main {
-  background-color: rgb(241, 240, 243);
+  background-image: url("/img/Filipino_Pattern_02.png");
+  background-position: top;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .site-main .hero-home {
   margin: 0 1em 0 1em;
@@ -1971,6 +1971,7 @@ body {
 
 /* PROJECT FOOTER NAV */
 .CTA {
+  background-color: rgb(241, 240, 243);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

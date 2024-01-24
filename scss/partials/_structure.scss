@@ -42,7 +42,7 @@
 
 /* HERO SECTION */
 .hero {
-    background-color: $color-white;
+    // background-color: $color-white;
     color: $color-black;
     text-align: center;
     padding: 6em 0;
@@ -71,16 +71,6 @@
         background-position: center;
         background-size: cover;
     }
-}
-
-
-
-.project-section {
-    top: 0;
-    background-image: url('/img/AmberAyre/AmberAyre_Hero.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .project-hero-bg {
@@ -135,7 +125,11 @@
 
 /* SITE MAIN */ 
 .site-main {
-    background-color: $color-white;
+    background-image: url('/img/Filipino_Pattern_02.png');
+    background-position: top;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
 
     .hero-home {
@@ -934,6 +928,7 @@
 
 /* PROJECT FOOTER NAV */ 
 .CTA {
+    background-color: $color-white;
     display: flex;
     justify-content: center;
     align-items: center;
