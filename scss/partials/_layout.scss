@@ -585,72 +585,70 @@ body { font-size: 87.5%; }
 
     /* ABOUT ME PAGE */ 
     .project-container {
-        width: 1200px !important;
+        justify-content: center !important;
 
-        .bio {
-            .sub-title {
-                justify-content: flex-start !important;
-            }
-            
-            .changing-text {
-                justify-content: flex-start !important;
-    
-                .roles {
-                    p {
-                        justify-content: flex-start !important;
-                    }
-    
-                }
-            }
-
-            @keyframes moveUp{
-                0%{
-                    transform: translateY(-20%) !important;
-                }
-            
-                33%{
-                    transform: translateY(-160%) !important;
-                }
-            
-                66%{
-                    transform: translateY(-290%) !important;
-                }
-            
-                100% {
-                    transform: translateY(-20%) !important;
-                }
-            }
-
-            .bio-p {
-                justify-content: flex-start !important;
-            }
-        
-            .bio-p-location {
-                justify-content: flex-start !important;
-            }
-        
-            .social-links {
-                justify-content: flex-start !important;
-        
-                a {
-                    padding: 0 !important;
-            
-                    &:hover {
-                        color: $color-gold;
-                    }
-                }
-            }
+        .about {
+            max-width: 1000px !important;
         }
 
-        .contactme {
-            justify-content: flex-start !important;
+        .about_profile {
+            position: relative !important;
+            left: -50px !important;
+            width: 350px !important;
+        }
+
+        .about_info {
+            display: inline-block !important;
+            width: 350px !important;
+            position: relative !important;
+            right: -58px !important;
+
+            .bio {
+                padding: 0 !important;
+                margin-bottom: 0 !important;
+
+                .sub-title {
+                    justify-content: flex-start !important;
+                }
+                
+                .changing-text {
+                    justify-content: flex-start !important;
         
-            .connect-button {
-                justify-content: flex-start;
-                cursor: pointer;
+                    .roles {
+                        p {
+                            font-size: 2.5em !important;
+                            justify-content: flex-start !important;
+                        }
         
-                .button {
-                    margin: 0 !important;
+                    }
+                }
+
+                .bio-p {
+                    justify-content: flex-start !important;
+                    font-size: 2.5em !important;
+                }
+            
+                .bio-p-location {
+                    justify-content: flex-start !important;
+                }
+            
+                .social-links {
+                    justify-content: flex-start !important;
+            
+                    a {
+                        padding: 0 !important;
+                    }
+                }
+            }
+
+            .contactme {
+                justify-content: flex-start !important;
+                padding: 0 !important;
+            
+                .connect-button {
+                    .button {
+                        margin: 0 !important;
+                    }
                 }
             }
         }
@@ -731,6 +729,84 @@ body { font-size: 87.5%; }
         }
 
     }
+    
+    // .about-section {
+    //     .about-hero {
+    //         max-width: 1200px !important;
+
+    //         .row {
+    //             display: flex;
+    //             justify-content: center;
+
+    //             .one-half {
+    //                 width: 500px !important;
+                    
+    //                 .sub-title {
+    //                     display: flex !important;
+    //                     justify-content: flex-start !important;
+    //                 }
+                
+    //                 .changing-text {
+    //                     display: flex !important;
+    //                     justify-content: flex-start !important;
+                
+    //                     .texts-container {
+    //                         display: flex !important;
+    //                         justify-content: flex-start !important;
+                
+    //                         .roles {
+    //                             margin: 0;
+                
+    //                             p {
+    //                                 display: flex !important;
+    //                                 justify-content: flex-start !important;
+    //                             }
+                
+    //                         }
+    //                     }
+    //                 }
+    //                 .bio-p {
+    //                     display: flex !important;
+    //                     justify-content: flex-start !important;
+    //                 }
+                
+    //                 .bio-p-location {
+    //                     display: flex !important;
+    //                     justify-content: flex-start !important;
+    //                 }
+    
+    //                 @keyframes moveUp{
+    //                 0% {
+    //                     transform: translateY(-12%);
+    //                 }
+                
+    //                 33%{ 
+    //                     transform: translateY(-140%);
+    //                 }
+                
+    //                 66% {
+    //                     transform: translateY(-270%);
+    //                 }
+                
+    //                 100% {
+    //                     transform: translateY(-12%);
+    //                 }
+    //             }
+    
+    //                 .contactme {
+    //                     display: flex !important;
+    //                     justify-content: flex-start !important;
+                    
+    //                     .connect-button {
+    //                         .button {
+    //                             margin: .5em .5em .5em 0 !important;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     .about-green-bg {
         .Brand_Pattern_01 {

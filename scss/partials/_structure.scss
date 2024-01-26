@@ -179,91 +179,102 @@
 
 /* ABOUT ME PAGE */ 
 .project-container {
-    width: 480px;
     display: inline-block;
+    justify-content: center;
+    margin-top: 5em;
 
-    .bio {
-        margin-bottom: 3em;
-    
-        .sub-title {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .changing-text {
-            display: flex;
-            justify-content: center;
-            height: 60px;
-    
-            .texts-container{
+    .about_profile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_info {
+        display: grid;
+        justify-content: center;
+        width: 400px;
+
+        .bio {
+            margin-bottom: 2em;
+        
+            .sub-title {
                 display: flex;
-                overflow: hidden;
+                justify-content: center;
+            }
+        
+            .changing-text {
+                display: flex;
+                justify-content: center;
                 height: 60px;
-                color: $color-green;
-    
-                .roles {
-                    margin: 0;
-    
-                    p {
-                        display: flex;
-                        justify-content: center;
-                        animation: moveUp 8s infinite;
-                        font-size: 3em;
+        
+                .texts-container{
+                    display: flex;
+                    overflow: hidden;
+                    height: 60px;
+                    color: $color-green;
+        
+                    .roles {
+                        margin: 0;
+        
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            animation: moveUp 8s infinite;
+                            font-size: 3em;
+                        }
+        
                     }
-    
+                }
+            }
+            
+            @keyframes moveUp{
+                0% {
+                    transform: translateY(-12%);
+                }
+             
+                33% {
+                    transform: translateY(-140%);
+                }
+            
+                66% {
+                    transform: translateY(-280%);
+                }
+            
+                100% {
+                    transform: translateY(-12%);
+                }
+            }
+        
+            .bio-p {
+                display: flex;
+                justify-content: center;
+                margin: .1em 0;
+                font-size: 3em;
+                color: $color-black;
+            }
+        
+            .bio-p-location {
+                display: flex;
+                justify-content: center;
+                margin: .5em 0;
+                font-size: 1em;
+                color: $color-black;
+            }
+        }
+        
+        .contactme {
+            display: flex;
+            justify-content: center;
+        
+            .connect-button {
+                justify-content: flex-start;
+                cursor: pointer;
+        
+                .button {
+                    margin: .5em;
                 }
             }
         }
-        
-        @keyframes moveUp{
-            0%{
-                transform: translateY(-12%);
-            }
-        
-            33%{
-                transform: translateY(-140%);
-            }
-        
-            66%{
-                transform: translateY(-270%);
-            }
-        
-            100% {
-                transform: translateY(-12%);
-            }
-        }
-    
-        .bio-p {
-            display: flex;
-            justify-content: center;
-            margin: .1em 0;
-            font-size: 3em;
-            color: $color-black;
-        }
-    
-        .bio-p-location {
-            display: flex;
-            justify-content: center;
-            margin: .5em 0;
-            font-size: 1em;
-            color: $color-black;
-        }
     }
-    
-    .contactme {
-        display: flex;
-        justify-content: center;
-    
-        .connect-button {
-            justify-content: flex-start;
-            cursor: pointer;
-    
-            .button {
-                margin: .5em;
-            }
-        }
-    }
-
 }
 
 /* PROJECT INFORMATION */ 
