@@ -239,6 +239,8 @@
 }
 
 .avatar {
+    position: relative;
+    left: 0;
 	box-sizing: border-box;
 	overflow: hidden;
 	transform: translatey(0px);

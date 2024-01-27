@@ -58,6 +58,9 @@ body { font-size: 87.5%; }
 
 /* MEDIA QUERIES FOR LARGE SCREENS*/ 
 @media (min-width: $breakpoint-small) {
+    .avatar {
+        left: 5% !important;
+    }
     .home-hr {
         width: 100% !important;
     }
@@ -481,6 +484,7 @@ body { font-size: 87.5%; }
     }
     
     .lp {
+        left: -5% !important;
         width: 80% !important;
 
         .lp_lg_title {

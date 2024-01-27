@@ -279,6 +279,10 @@ body {
 }
 /* MEDIA QUERIES FOR LARGE SCREENS*/
 @media (min-width: 768px) {
+  .avatar {
+    left: 5% !important;
+  }
+
   .home-hr {
     width: 100% !important;
   }
@@ -684,6 +688,7 @@ body {
   }
 
   .lp {
+    left: -5% !important;
     width: 80% !important;
   }
   .lp .lp_lg_title h2 {
@@ -1240,7 +1245,7 @@ body {
 
 /* SITE MAIN */
 .site-main {
-  background-image: url("/img/Filipino_Pattern_02.png");
+  background-image: url("/img/Illustration/Filipino_Pattern_02.png");
   background-position: top;
   background-repeat: repeat;
   background-size: cover;
@@ -2219,10 +2224,20 @@ section-p {
   cursor: default;
   pointer-events: none;
 }
+.carousel > input[type=radio]:nth-child(1):checked ~ .carousel__nav2 > label:nth-child(1) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
 .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(2):checked ~ .carousel__nav2 > label:nth-child(2) {
   background: rgb(80, 107, 95);
   cursor: default;
   pointer-events: none;
@@ -2235,10 +2250,20 @@ section-p {
   cursor: default;
   pointer-events: none;
 }
+.carousel > input[type=radio]:nth-child(3):checked ~ .carousel__nav2 > label:nth-child(3) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
 .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(4):checked ~ .carousel__nav2 > label:nth-child(4) {
   background: rgb(80, 107, 95);
   cursor: default;
   pointer-events: none;
@@ -2251,10 +2276,20 @@ section-p {
   cursor: default;
   pointer-events: none;
 }
+.carousel > input[type=radio]:nth-child(5):checked ~ .carousel__nav2 > label:nth-child(5) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
 .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(6):checked ~ .carousel__nav2 > label:nth-child(6) {
   background: rgb(80, 107, 95);
   cursor: default;
   pointer-events: none;
@@ -2267,6 +2302,11 @@ section-p {
   cursor: default;
   pointer-events: none;
 }
+.carousel > input[type=radio]:nth-child(7):checked ~ .carousel__nav2 > label:nth-child(7) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
 .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(8) {
   opacity: 1;
 }
@@ -2275,10 +2315,20 @@ section-p {
   cursor: default;
   pointer-events: none;
 }
+.carousel > input[type=radio]:nth-child(8):checked ~ .carousel__nav2 > label:nth-child(8) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
 .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__items .carousel__item:nth-child(9) {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__nav > label:nth-child(9) {
+  background: rgb(80, 107, 95);
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type=radio]:nth-child(9):checked ~ .carousel__nav2 > label:nth-child(9) {
   background: rgb(80, 107, 95);
   cursor: default;
   pointer-events: none;
@@ -2311,7 +2361,7 @@ section-p {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 30%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: all 0.3s ease;
@@ -2361,6 +2411,23 @@ section-p {
   z-index: 3;
 }
 .carousel__nav > label {
+  border: 1px solid rgb(80, 107, 95);
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.125%;
+  width: 10px;
+  height: 10px;
+}
+.carousel__nav2 {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+.carousel__nav2 > label {
   border: 1px solid rgb(80, 107, 95);
   display: inline-block;
   border-radius: 50%;
@@ -2900,6 +2967,8 @@ section-p {
   }
 }
 .avatar {
+  position: relative;
+  left: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
