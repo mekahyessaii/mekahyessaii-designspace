@@ -704,6 +704,9 @@ body {
   .resolution .row {
     padding-top: 2em !important;
   }
+  .resolution .resolution_info .intern_box {
+    color: rgb(80, 107, 95);
+  }
   .resolution .resolution_img {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1242,6 +1245,17 @@ body {
 .green-bg {
   background-color: rgb(80, 107, 95);
 }
+.green-bg .intern {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.green-bg h2,
+.green-bg h4 {
+  color: rgb(235, 201, 127);
+}
 
 /* SITE MAIN */
 .site-main {
@@ -1274,6 +1288,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.site-main .other-hero-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 /* RESUME PAGE */
@@ -1562,6 +1585,24 @@ body {
   opacity: 0.5;
   text-transform: uppercase;
   font-size: 0.75em;
+}
+.black-bg .intern_process {
+  margin: 4em;
+}
+.black-bg .intern_process .resolution_info h4 {
+  color: rgb(235, 201, 127);
+}
+.black-bg .intern_process .resolution_info p {
+  color: rgb(241, 240, 243);
+}
+.black-bg .muw {
+  margin: 8em 4em 4em 4em;
+}
+.black-bg .muw .intern_info h4 {
+  color: rgb(235, 201, 127);
+}
+.black-bg .muw .intern_info p {
+  color: rgb(241, 240, 243);
 }
 
 .aa_pattern_bg {

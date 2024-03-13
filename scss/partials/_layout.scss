@@ -511,6 +511,12 @@ body { font-size: 87.5%; }
             padding-top: 2em !important;
         }
 
+        .resolution_info {
+            .intern_box {
+                color: $color-green;
+            }
+        }
+
         .resolution_img {
             display: flex !important;
             justify-content: center !important;

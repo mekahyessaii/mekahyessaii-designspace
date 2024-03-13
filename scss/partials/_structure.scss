@@ -121,6 +121,17 @@
 
 .green-bg {
     background-color: $color-green;
+
+    .intern {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h2,
+    h4 {
+        color: $color-gold;
+    }
 }
 
 /* SITE MAIN */ 
@@ -156,8 +167,15 @@
             display: flex;
             justify-content: center;
         }
-
     }
+
+    .other-hero-home {
+        display: flex;
+        justify-content: center;
+    text-align: center;    
+}
+
+
 }
 
 /* RESUME PAGE */ 
@@ -424,6 +442,35 @@
                     text-transform: uppercase;
                     font-size: .75em;
                 }
+            }
+        }
+    }
+
+    .intern_process {
+        margin: 4em;
+
+        .resolution_info {
+
+            h4 {
+                color: $color-gold;
+            }
+
+            p {
+                color: $color-white;
+            }
+        }
+    }
+
+    .muw {
+        margin: 8em 4em 4em 4em;
+
+        .intern_info {
+            h4 {
+                color: $color-gold;
+            }
+
+            p {
+                color: $color-white;
             }
         }
     }
