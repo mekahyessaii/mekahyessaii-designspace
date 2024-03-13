@@ -209,10 +209,11 @@
     .about_info {
         display: grid;
         justify-content: center;
-        width: 400px;
+        text-align: center;
+        align-items: center;
 
         .bio {
-            margin-bottom: 2em;
+            margin: 2em 0;
         
             .sub-title {
                 display: flex;

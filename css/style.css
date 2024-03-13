@@ -1339,10 +1339,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 400px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .project-container .about_info .bio {
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 .project-container .about_info .bio .sub-title {
   display: -webkit-box;
