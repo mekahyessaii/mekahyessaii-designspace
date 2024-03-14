@@ -1711,9 +1711,12 @@ body {
   padding-top: 8em;
 }
 .challenge-solution .row .one-half .cs {
-  margin: 0 4em;
+  margin: 0 2em;
   height: 20vh;
   max-width: 500px;
+}
+.challenge-solution .row .one-half .cs_solution {
+  margin-top: 2em;
 }
 .challenge-solution .cs_title {
   top: 0%;
