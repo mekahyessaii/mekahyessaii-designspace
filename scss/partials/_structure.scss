@@ -204,6 +204,11 @@
     .about_profile {
         display: flex;
         justify-content: center;
+
+        img {
+            width: 300px;
+            box-shadow: $color-gold -10px 10px 1px ;
+        }
     }
 
     .about_info {

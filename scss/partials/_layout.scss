@@ -605,6 +605,10 @@ body { font-size: 87.5%; }
             position: relative !important;
             left: -50px !important;
             width: 350px !important;
+
+            img {
+                width: 500px !important;
+            }
         }
 
         .about_info {

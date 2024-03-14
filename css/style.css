@@ -776,6 +776,9 @@ body {
     left: -50px !important;
     width: 350px !important;
   }
+  .project-container .about_profile img {
+    width: 500px !important;
+  }
   .project-container .about_info {
     display: inline-block !important;
     width: 350px !important;
@@ -1332,6 +1335,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.project-container .about_profile img {
+  width: 300px;
+  -webkit-box-shadow: rgb(235, 201, 127) -10px 10px 1px;
+          box-shadow: rgb(235, 201, 127) -10px 10px 1px;
 }
 .project-container .about_info {
   display: -ms-grid;
