@@ -621,6 +621,10 @@
 
             .cs_solution {
                 margin-top: 2em;
+
+                .cs_title {
+                    margin-top: 2em;
+                }
             }
         }
     }
@@ -916,7 +920,7 @@
 
         .other {
             max-width: 500px;
-            margin: 0 4em;
+            margin: 0 2em;
 
             h3 {
                 color: $color-white;
@@ -926,6 +930,11 @@
                 margin: 1em 0 1.5em 0;
                 background-color: $color-gold;
             }
+        }
+
+        .mw_prev,
+        .mw_next {
+            margin: 4em 0;
         }
     }
 }

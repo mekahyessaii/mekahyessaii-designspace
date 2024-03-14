@@ -1718,6 +1718,9 @@ body {
 .challenge-solution .row .one-half .cs_solution {
   margin-top: 2em;
 }
+.challenge-solution .row .one-half .cs_solution .cs_title {
+  margin-top: 2em;
+}
 .challenge-solution .cs_title {
   top: 0%;
 }
@@ -1970,7 +1973,7 @@ body {
 }
 .mw .mw_links .other {
   max-width: 500px;
-  margin: 0 4em;
+  margin: 0 2em;
 }
 .mw .mw_links .other h3 {
   color: rgb(241, 240, 243);
@@ -1978,6 +1981,10 @@ body {
 .mw .mw_links .other .home-hr {
   margin: 1em 0 1.5em 0;
   background-color: rgb(235, 201, 127);
+}
+.mw .mw_links .mw_prev,
+.mw .mw_links .mw_next {
+  margin: 4em 0;
 }
 
 .staggered {
