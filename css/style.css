@@ -1177,6 +1177,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+}
+.project-hero-bg .project-hero {
+  font-size: 2.2em;
 }
 
 .proj-scroll-down {
@@ -1977,6 +1981,7 @@ body {
 }
 .mw .mw_links .other h3 {
   color: rgb(241, 240, 243);
+  font-size: 1.2em;
 }
 .mw .mw_links .other .home-hr {
   margin: 1em 0 1.5em 0;
@@ -2023,7 +2028,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 40vh;
+  height: 50vh;
 }
 .sum_bg .sum .sum_current,
 .sum_bg .sum .sum_history {

@@ -78,6 +78,11 @@
     .project-subhero {
         display: flex;
         justify-content: center;
+        text-align: center;
+    }
+
+    .project-hero {
+        font-size: 2.2em;
     }
 }
 
@@ -924,6 +929,7 @@
 
             h3 {
                 color: $color-white;
+                font-size: 1.2em;
             }
 
             .home-hr {
@@ -973,7 +979,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 40vh;
+        height: 50vh;
 
         .sum_current,
         .sum_history {
