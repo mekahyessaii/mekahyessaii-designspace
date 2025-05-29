@@ -404,7 +404,7 @@ body {
   }
 
   .introduction h1 {
-    font-size: 3em !important;
+    font-size: 2.5em !important;
   }
 
   .staggered {
@@ -1120,7 +1120,7 @@ body {
 }
 .site-header .logo,
 .site-header-hero .logo {
-  max-width: 200px;
+  max-width: 150px;
   margin-top: 0.2em;
   margin-right: 0.5em;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -1275,6 +1275,13 @@ body {
 .site-main .hero-home {
   margin: 0 1em 0 1em;
   padding: 1em 0;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
 }
 .site-main .hero-home .row {
   margin-bottom: 0;
@@ -1287,6 +1294,11 @@ body {
 }
 .site-main .hero-home .introduction h1 {
   font-size: 2em;
+  color: rgb(203, 86, 44);
+}
+.site-main .hero-home .introduction h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 .site-main .hero-home .connect-button {
   display: -webkit-box;

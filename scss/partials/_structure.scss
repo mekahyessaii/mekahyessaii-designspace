@@ -24,7 +24,7 @@
     }
 
     .logo {
-        max-width: 200px;
+        max-width: 150px;
         margin-top: .2em;
         margin-right: .5em;
         transition: transform .2s ease-in-out;
@@ -151,6 +151,9 @@
     .hero-home {
         margin: 0 1em 0 1em;
         padding: 1em 0;
+        align-items: left;
+        justify-content: center;
+        text-align: left;
 
         .row {
             margin-bottom: 0;
@@ -165,6 +168,12 @@
 
             h1 {
                 font-size: 2em;
+                color: $color-orange;
+            }
+
+            h3 {
+                font-weight: 100;
+                letter-spacing: 2px;
             }
         }
 
@@ -177,7 +186,7 @@
     .other-hero-home {
         display: flex;
         justify-content: center;
-    text-align: center;    
+        text-align: center;    
 }
 
 
