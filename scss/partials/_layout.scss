@@ -1,7 +1,7 @@
 /* RESET BODY */
 body {
     margin: 0;
-    background-color: $color-white;
+    background-color: $color-creme;
 }
 
 /* CONTAINER */
@@ -137,8 +137,8 @@ body { font-size: 87.5%; }
                 width: $arrow-size;
                 height: $arrow-size;
                 transform: rotate(45deg);
-                border-right: 2px solid $color-green;
-                border-bottom: 2px solid $color-green;
+                border-right: 2px solid $color-orange;
+                border-bottom: 2px solid $color-orange;
                 animation: arrow-wave 1s infinite;
                 animation-direction: alternate;
                 @for $i from 1 through 3 {
@@ -249,19 +249,19 @@ body { font-size: 87.5%; }
             }
 
             h1 {
-                color: $color-gold;
+                color: $color-yellow;
             }
         
             .sum_title {
 
                 h4 {
-                    color: $color-gold;
+                    color: $color-yellow;
                 }
             }
             
             .sum_background_info {
                 margin: 0;
-                color: $color-white;
+                color: $color-creme;
             }
                 
         }
@@ -279,13 +279,13 @@ body { font-size: 87.5%; }
 
             .episode_info {
                 h5 {
-                    color: $color-gold;
+                    color: $color-yellow;
                     margin-top: 1em;
                     text-align: left;
                 }
 
                 .episode-desc {
-                    color: $color-white;
+                    color: $color-creme;
                     margin: .5em 0;
                     text-align: left;
                 }
@@ -343,16 +343,16 @@ body { font-size: 87.5%; }
                 width: 400px !important;
                 top: 10% !important;
                 left: 0 !important;
-                background-color: $color-green;
+                background-color: $color-orange;
                 padding: 4em;
                 border-radius: 2%;
     
                 h4 {
-                    color: $color-gold;
+                    color: $color-yellow;
                 }
     
                 p {
-                    color: $color-white;
+                    color: $color-creme;
                 }
             }
         }
@@ -366,7 +366,7 @@ body { font-size: 87.5%; }
                 max-width: 600px;
     
                 .title {
-                    background-color: $color-green;
+                    background-color: $color-orange;
                     padding: 4em;
                     border-radius: 10px;
                     position: relative;
@@ -374,16 +374,16 @@ body { font-size: 87.5%; }
                     
                     .lp_lg_title {
                         h2 {
-                            color: $color-gold;
+                            color: $color-yellow;
                         }
                     }
     
                     h4 {
-                        color: $color-gold;
+                        color: $color-yellow;
                     }
     
                     p {
-                        color: $color-white;
+                        color: $color-creme;
                     }
                 }
             }
@@ -489,18 +489,18 @@ body { font-size: 87.5%; }
 
         .lp_lg_title {
             h2 {
-                color: $color-gold;
+                color: $color-yellow;
             }
         }
     
         .lp_title {
             h4 {
-                color: $color-gold;
+                color: $color-yellow;
             }
         }
     
         .lp_info {
-            color: $color-white;
+            color: $color-creme;
         }
         
     }
@@ -534,21 +534,21 @@ body { font-size: 87.5%; }
     
             .ma_lg_title {
                 h2 {
-                    color: $color-gold;
+                    color: $color-yellow;
                 }
             }
     
             .ma_title {
     
                 h4 {
-                    color: $color-gold;
+                    color: $color-yellow;
                 }
             }
     
             .ma_info {
     
                 p {
-                    color: $color-white;
+                    color: $color-creme;
                 }
             }
     
@@ -587,7 +587,7 @@ body { font-size: 87.5%; }
 
                 .home-hr {
                     margin: 1em 0 1.5em 0;
-                    background-color: $color-gold;
+                    background-color: $color-yellow;
                 }
             }
         }
@@ -722,7 +722,7 @@ body { font-size: 87.5%; }
                     padding: 0 !important;
             
                     &:hover {
-                        color: $color-gold;
+                        color: $color-yellow;
                     }
                 }
             }
@@ -891,7 +891,7 @@ body { font-size: 87.5%; }
                 display: flex;
                 justify-content: space-around;
                 width: 200px;
-                color: $color-copy-brown;
+                color: $color-gray;
                 font-size: .6em;
             }
         }

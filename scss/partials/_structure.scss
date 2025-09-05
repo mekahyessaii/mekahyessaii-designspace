@@ -55,7 +55,7 @@
 
 /* HERO SECTION */
 .hero {
-    // background-color: $color-white;
+    // background-color: $color-creme;
     color: $color-gray;
     text-align: center;
     padding: 6em 0;
@@ -156,7 +156,7 @@
 
     h2,
     h4 {
-        color: $color-gold;
+        color: $color-yellow;
     }
 }
 
@@ -248,7 +248,7 @@
 
         img {
             width: 300px;
-            box-shadow: $color-gold -10px 10px 1px;
+            box-shadow: $color-yellow -10px 10px 1px;
         }
     }
 
@@ -374,12 +374,12 @@
         height: 195vh;
 
         h6 {
-            color: $color-gold;
+            color: $color-yellow;
         }
 
         .img-favorites {
             h3 {
-                color: $color-white;
+                color: $color-creme;
             }
 
             .row {
@@ -403,7 +403,7 @@
                     }
                       
                     .fav-info {
-                        background-color: $color-brown;
+                        background-color: $color-yellow;
                         transition: .5s ease;
                         opacity: 0;
                         position: absolute;
@@ -416,7 +416,7 @@
                             margin: 0;
                             text-align: center;
                             padding: 1em;
-                            color: $color-white;
+                            color: $color-creme;
                             font-size: .8em;
                         }
                 
@@ -436,7 +436,7 @@
                         
                     // .fav-img-card:hover + .fav-info {
                     //     display: block;
-                    //     color: $color-white;
+                    //     color: $color-creme;
                     // }
                 }
             }
@@ -562,21 +562,21 @@
         .ma_lg_title {
 
             h2 {
-                color: $color-gold;
+                color: $color-yellow;
             }
         }
 
         .ma_title {
 
             h4 {
-                color: $color-gold;
+                color: $color-yellow;
             }
         }
 
         .ma_info {
 
             p {
-                color: $color-white;
+                color: $color-creme;
             }
         }
     }
@@ -651,7 +651,7 @@
 
 .challenge-solution {
     max-width: 500px;
-    border: 1px solid $color-brown;
+    border: 1px solid $color-yellow;
     padding-top: 8em;
 
     .row {
@@ -702,18 +702,18 @@
 
     .ba_lg_title {
         h2 {
-            color: $color-gold;
+            color: $color-yellow;
         }
     }
 
     .ba_title {
         h4 {
-            color: $color-gold;
+            color: $color-yellow;
         }
     }
 
     .ba_info {
-        color: $color-white;
+        color: $color-creme;
     }
     
 }
@@ -800,7 +800,7 @@
     }
 
     .resolution_img {
-        background-color: $color-white;
+        background-color: $color-creme;
 
         img {
             width: 92%;
@@ -834,15 +834,15 @@
             border-radius: 10px;
 
             h2 {
-                color: $color-gold;
+                color: $color-yellow;
             }
 
             h4 {
-                color: $color-gold;
+                color: $color-yellow;
             }
 
             p {
-                color: $color-white;
+                color: $color-creme;
             }
         }
 
@@ -856,15 +856,15 @@
             border-radius: 10px;
 
             h2 {
-                color: $color-gold;
+                color: $color-yellow;
             }
 
             h4 {
-                color: $color-gold;
+                color: $color-yellow;
             }
 
             p {
-                color: $color-white;
+                color: $color-creme;
             }
         }
     }
@@ -889,7 +889,7 @@
     margin-top: 2em;
 
     h2 {
-        color: $color-gold;
+        color: $color-yellow;
         text-align: center;
     }
 }
@@ -908,8 +908,8 @@
             overflow: hidden;
             width: 100%;
             height: auto;
-            border: 1px solid $color-darkblack;
-            box-shadow: 0px 0px 10px 1px $color-darkblack;
+            border: 1px solid $color-gray;
+            box-shadow: 0px 0px 10px 1px $color-gray;
         
             img {
                 display: block;
@@ -925,13 +925,13 @@
 
         .episode_info {
             h5 {
-                color: $color-gold;
+                color: $color-yellow;
                 margin-top: 1em;
                 text-align: left;
             }
 
             .episode-desc {
-                color: $color-white;
+                color: $color-creme;
                 margin: .5em 0;
                 text-align: left;
             }
@@ -953,7 +953,7 @@
         align-items: center;
 
         h2 {
-            color: $color-gold;
+            color: $color-yellow;
         }
     }
 
@@ -966,7 +966,7 @@
             margin: 0 2em;
 
             h3 {
-                color: $color-white;
+                color: $color-creme;
                 font-size: 1.2em;
             }
 
@@ -1158,7 +1158,7 @@
             display: flex;
             justify-content: space-around;
             width: 200px;
-            color: $color-copy-brown;
+            color: $color-gray;
             font-size: .6em;
         }
     }
