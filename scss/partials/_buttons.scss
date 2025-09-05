@@ -2,9 +2,12 @@
 .button {
     display: inline-block;
     background-color: transparent;
-    border: 2px solid $color-green;
-    color: $color-green;
-    font-family: $font-family-sans;
+    border: 2px solid $color-yellow;
+    background-color: $color-yellow;
+    color: $color-gray;
+    font-family: pentz-regular, serif;
+    font-weight: 400;
+    font-style: normal;
     text-transform: uppercase;
     text-decoration: none;
     padding: .7em 1em;
@@ -12,9 +15,9 @@
     margin: 1em .5em 1em 0;
 
     &:hover {
-        border: 2px solid $color-green;
-        color: $color-white;
-        background-color: $color-green;
+        border: 2px solid $color-orange;
+        color: $color-creme;
+        background-color: $color-orange;
     }
 }
 
@@ -24,14 +27,15 @@
     justify-content: flex-start;
     padding: 0;
     list-style: none;
+    font-family: $font-family-sans-body;
 
     li {
-        border: 1px solid $color-green;
-        background-color: $color-green;
-        color: $color-gold;
+        border: 1px solid $color-yellow;
+        background-color: $color-yellow;
+        color: $color-gray;
         border-radius: 5em;
         margin: .2em;
-        padding: .5em 1em;
+        padding: .2em 1em 0 1em;
         font-size: .8em;
         width: auto;
     }
@@ -42,14 +46,15 @@
     justify-content: flex-start;
     padding: 0;
     list-style: none;
+    font-family: $font-family-sans-body;
 
     li {
-        border: 1px solid $color-green;
-        background-color: $color-green;
-        color: $color-gold;
+        border: 1px solid $color-yellow;
+        background-color: $color-yellow;
+        color: $color-gray;
         border-radius: 5em;
         margin: .2em;
-        padding: .5em 1em;
+        padding: .2em 1em 0 1em;
         font-size: .8em;
         width: auto;
     }
@@ -61,14 +66,15 @@
     margin-top: 1.3em;
     padding: 0;
     list-style: none;
+    font-family: $font-family-sans-body;
 
     li {
-        border: 1px solid $color-green;
-        background-color: $color-green;
-        color: $color-gold;
+        border: 1px solid $color-yellow;
+        background-color: $color-yellow;
+        color: $color-gray;
         border-radius: 5em;
         margin: .2em;
-        padding: .5em 1em;
+        padding: .2em 1em 0 1em;
         font-size: .8em;
         width: auto;
     }

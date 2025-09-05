@@ -9,7 +9,7 @@
     align-items: center;
     
     a {
-        color: $color-gold;
+        color: $color-yellow;
         text-decoration: none;
     }
 
@@ -35,6 +35,19 @@
         }
     }
 }
+.site-header .site-nav {
+    li {
+
+        a {
+            color: $color-gray !important;
+            font-size: 3em !important;
+
+            &:hover {
+                color: $color-orange !important;
+            }
+        }
+    }
+}
 
 .section_border {
     margin: 2em 0;
@@ -43,7 +56,7 @@
 /* HERO SECTION */
 .hero {
     // background-color: $color-white;
-    color: $color-black;
+    color: $color-gray;
     text-align: center;
     padding: 6em 0;
     min-height: 100vh;
@@ -51,7 +64,7 @@
     place-items: center;
 
     h1 {
-        color: $color-black;
+        color: $color-gray;
         margin-bottom: .25em;
     }
 
@@ -100,8 +113,8 @@
         width: $arrow-size;
         height: $arrow-size;
         transform: rotate(45deg);
-        border-right: 2px solid $color-green;
-        border-bottom: 2px solid $color-green;
+        border-right: 2px solid $color-orange;
+        border-bottom: 2px solid $color-orange;
         animation: arrow-wave 1s infinite;
         animation-direction: alternate;
         @for $i from 1 through 3 {
@@ -120,17 +133,25 @@
 
 /* BACKGROUND COLOR */ 
 .dark-bg {
-    background-color: $color-darkblack;
+    background-color: $color-gray;
     padding: 0;
 }
 
-.green-bg {
-    background-color: $color-green;
+.orange-bg {
+    background-color: $color-orange;
 
     .intern {
         display: inline-block;
         justify-content: center;
         text-align: center;
+        
+        .intern_lg_title {
+
+            h2 {
+                font-size: 2em;
+                font-family: 'pentz-regular', serif;
+            }
+        }
     }
 
     h2,
@@ -200,11 +221,17 @@
         margin-bottom: 2em;
         display: flex;
         justify-content: center;
+
+        .button { 
+            font-family: 'pentz-regular', serif;
+            font-weight: 400;
+            font-style: normal;
+        }
     }
 
     .resume {
         img {
-            box-shadow: 0px 0px 10px $color-black;
+            box-shadow: 0px 0px 10px $color-gray;
         }
     }
 }
@@ -248,7 +275,7 @@
                     display: flex;
                     overflow: hidden;
                     height: 60px;
-                    color: $color-green;
+                    color: $color-orange;
         
                     .roles {
                         margin: 0;
@@ -287,7 +314,7 @@
                 justify-content: center;
                 margin: .1em 0;
                 font-size: 3em;
-                color: $color-black;
+                color: $color-gray;
             }
         
             .bio-p-location {
@@ -295,7 +322,7 @@
                 justify-content: center;
                 margin: .5em 0;
                 font-size: 1em;
-                color: $color-black;
+                color: $color-gray;
             }
         }
         
@@ -316,9 +343,9 @@
 }
 
 /* PROJECT INFORMATION */ 
-.about-green-bg {
+.about-orange-bg {
     display: flex;
-    background-color: $color-green;
+    background-color: $color-orange;
 
     .section_border {
         width: 100%;
@@ -418,7 +445,7 @@
 }
 
 .black-bg {
-    background-color: $color-darkblack;
+    background-color: $color-gray;
 
     .section_border {
         width: 100%;
@@ -431,14 +458,16 @@
 
     .home-proj-title {
         h1 {
-            color: $color-gold;
+            font-family: $font-family-tertiary-classic;
+            letter-spacing: .1em;
+            color: $color-yellow;
             font-size: 4em;
             text-align: center;
         }
     }
 
     .project-container {
-        background-color: $color-black;
+        background-color: $color-gray;
 
         .proj-info {
             width: 500px;
@@ -472,11 +501,11 @@
         .resolution_info {
 
             h4 {
-                color: $color-gold;
+                color: $color-yellow;
             }
 
             p {
-                color: $color-white;
+                color: $color-creme;
             }
         }
     }
@@ -486,11 +515,11 @@
 
         .intern_info {
             h4 {
-                color: $color-gold;
+                color: $color-yellow;
             }
 
             p {
-                color: $color-white;
+                color: $color-creme;
             }
         }
     }
@@ -524,7 +553,7 @@
     }
 
     .mobile_app {
-        background-color: $color-green;
+        background-color: $color-orange;
         padding: 4em;
         width: 100%;
         border-radius: 10px;
@@ -559,21 +588,21 @@
         .ma_lg_title {
 
             h2 {
-                color: $color-black;
+                color: $color-gray;
             }
         }
 
         .ma_title {
 
             h4 {
-                color: $color-black;
+                color: $color-gray;
             }
         }
 
         .ma_info {
 
             p {
-                color: $color-black;
+                color: $color-gray;
             }
         }
 
@@ -600,18 +629,18 @@
 
         .sp_lg_title {
             h2 {
-                color: $color-black;
+                color: $color-gray;
             }
         }
     
         .sp_title {
             h4 {
-                color: $color-black;
+                color: $color-gray;
             }
         }
     
         .sp_info {
-            color: $color-black;
+            color: $color-gray;
         }
     }
 
@@ -653,7 +682,7 @@
 }
 
 .vl {
-    border-left: 3px solid $color-green;
+    border-left: 3px solid $color-orange;
     height: 0;
     opacity: 0;
 }
@@ -667,7 +696,7 @@
     top: -100px;
     left: 0;
     width: 70%;
-    background-color: $color-green;
+    background-color: $color-orange;
     padding: 4em;
     border-radius: 10px;
 
@@ -705,24 +734,24 @@
     top: -140px;
     left: 0;
     width: 70%;
-    background-color: $color-green;
+    background-color: $color-orange;
     padding: 4em;
     border-radius: 10px;
 
     .lp_lg_title {
         h2 {
-            color: $color-gold;
+            color: $color-yellow;
         }
     }
 
     .lp_title {
         h4 {
-            color: $color-gold;
+            color: $color-yellow;
         }
     }
 
     .lp_info {
-        color: $color-white;
+        color: $color-creme;
     }
     
 }
@@ -731,12 +760,12 @@
 .lp_video {
     .lp_title {
         h4 {
-            color: $color-black;
+            color: $color-gray;
         }
     }
 
     .lp_info {
-        color: $color-black;
+        color: $color-gray;
     }
 
     video {
@@ -762,7 +791,7 @@
 }
 
 .resolution  {
-    background-color: $color-white;
+    background-color: $color-creme;
     padding: 2em;
     border-radius: 10px;
 
@@ -800,7 +829,7 @@
             position: relative;
             top: 30%;
             left: 0;
-            background-color: $color-green;
+            background-color: $color-orange;
             padding: 4em;
             border-radius: 10px;
 
@@ -822,7 +851,7 @@
             top: 0;
             width: 100%;
             left: 0;
-            background-color: $color-green;
+            background-color: $color-orange;
             padding: 4em;
             border-radius: 10px;
 
@@ -943,7 +972,7 @@
 
             .home-hr {
                 margin: 1em 0 1.5em 0;
-                background-color: $color-gold;
+                background-color: $color-yellow;
             }
         }
 
@@ -964,16 +993,16 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: $color-green;
+    background-color: $color-orange;
     height: 50vh;
 
     .summary-container {
         h1 {
-            color: $color-gold;
+            color: $color-yellow;
         }
     
         p {
-            color: $color-gold;
+            color: $color-yellow;
             margin: 1em;
         }
 
@@ -981,7 +1010,7 @@
 }
 
 .sum_bg {
-    background-color: $color-green;
+    background-color: $color-orange;
 
     .sum {
         display: inline-block;
@@ -996,13 +1025,13 @@
         }
 
         h1 {
-            color: $color-gold;
+            color: $color-yellow;
         }
     
         .sum_title {
 
             h4 {
-                color: $color-gold;
+                color: $color-yellow;
             }
         }
 
@@ -1012,7 +1041,7 @@
             align-items: center;
             .sum_background_info {
                 margin: 0;
-                color: $color-white;
+                color: $color-creme;
             }
         }  
     }
@@ -1020,7 +1049,7 @@
 
 /* PROJECT FOOTER NAV */ 
 .CTA {
-    background-color: $color-white;
+    background-color: $color-creme;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1029,20 +1058,20 @@
     padding: 1em 0;
 
     li {
-        font-family: $font-family-sans;
+        font-family: $font-family-sans-headers;
         list-style: none;
 
         a {
             padding: 0 3em 0 3em;
             text-decoration: none;
-            color: $color-black;
+            color: $color-orange;
             letter-spacing: .1em;
             font-size: .69em;
             font-weight: 700;
             text-transform: uppercase;
 
             &:hover {
-                color: $color-brown;
+                color: $color-gray;
             }
         }
 
@@ -1051,7 +1080,7 @@
 
 /* SITE FOOTER */ 
 .site-footer {
-    background-color: $color-black;
+    background-color: $color-creme;
     display: flex;
     padding: 1em;
     height: 50vh;
@@ -1072,12 +1101,12 @@
         }
 
         h3 {
-            color: $color-white;
+            color: $color-creme;
             margin: .5em 0 0 0;
         }
 
         h5 {
-            color: $color-white;
+            color: $color-creme;
         }
 
         .copyright-container {
@@ -1098,7 +1127,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            color: $color-white;
+            color: $color-orange;
         }
 
         .social-links {
@@ -1108,13 +1137,13 @@
             height: 40px;
 
             a {
-                color: $color-white;
+                color: $color-gray;
                 font-size: 1.4em;;
                 text-decoration: none;
                 height: 40px;
         
                 &:hover {
-                    color: $color-gold;
+                    color: $color-orange;
                 }
             }
         }
@@ -1261,7 +1290,7 @@ section-p {
                     ~ .carousel__nav {
                         > label {
                         &:nth-child(#{$i}) {
-                            background: $color-green;
+                            background: $color-orange;
                             cursor: default;
                             pointer-events: none;
                         }
@@ -1271,7 +1300,7 @@ section-p {
                     ~ .carousel__nav2 {
                         > label {
                         &:nth-child(#{$i}) {
-                            background: $color-green;
+                            background: $color-orange;
                             cursor: default;
                             pointer-events: none;
                         }
@@ -1334,8 +1363,8 @@ section-p {
         }
 
         &:before {
-            background: linear-gradient(to top, $color-green 0%, $color-green 10%, rgba(51, 51, 51, 0) 10%),
-                        linear-gradient(to left, $color-green 0%, $color-green 10%, rgba(51, 51, 51, 0) 10%);
+            background: linear-gradient(to top, $color-orange 0%, $color-orange 10%, rgba(51, 51, 51, 0) 10%),
+                        linear-gradient(to left, $color-orange 0%, $color-orange 10%, rgba(51, 51, 51, 0) 10%);
             width: 60%;
             height: 60%;
             top: 100%;
@@ -1375,7 +1404,7 @@ section-p {
         z-index: 3;
   
             > label {
-                border: 1px solid $color-green;
+                border: 1px solid $color-orange;
                 display: inline-block;
                 border-radius: 50%;
                 cursor: pointer;
@@ -1394,7 +1423,7 @@ section-p {
           z-index: 3;
     
               > label {
-                  border: 1px solid $color-green;
+                  border: 1px solid $color-orange;
                   display: inline-block;
                   border-radius: 50%;
                   cursor: pointer;

@@ -1,11 +1,11 @@
 /* BASE TEXT COLORS */ 
-body {color: $color-black;}
-h1, h2, h3, h4, h5, h6 {color: $color-black;}
+body {color: $color-gray;}
+h1, h2, h3, h4, h5, h6 {color: $color-gray;}
 
 /* BASE TEXT FONTS */ 
-body {font-family: $font-family-serif;}
+body {font-family: $font-family-sans-body;}
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-sans;
+    font-family: $font-family-sans-headers;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ a {
 hr {
     border: 0;
     height: 3px;
-    background-color: $color-gold;
+    background-color: $color-orange;
     margin: 3em 0;
     width: 100%;
 }
@@ -64,7 +64,7 @@ hr {
 /* SECTION HEADING */ 
 .section-heading {
     font-size: 1em;
-    font-family: $font-family-sans;
+    font-family: $font-family-sans-headers;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .05em;

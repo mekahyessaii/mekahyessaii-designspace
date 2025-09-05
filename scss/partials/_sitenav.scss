@@ -4,7 +4,7 @@
         position: absolute;
         top: 1.5em;
         right: .75em;
-        color: $color-black;
+        color: $color-gray;
         margin: 0;
         font-size: 1.5em;
         line-height: 1;
@@ -13,7 +13,7 @@
         cursor: pointer;
 
         svg {
-            fill: $color-black;
+            fill: $color-orange;
 
             rect {
                 transition: .3s all ease-out;
@@ -25,7 +25,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: $color-green;
+        background-color: $color-creme;
         position: fixed;
         top: 0;
         right: 0;
@@ -52,18 +52,19 @@
         letter-spacing: .2em;
 
         a {
-            color: $color-black;
+            font-family: $font-family-sans-headers;
+            color: $color-orange;
             font-size: 2.3em;
 
             &:hover {
-                color: $color-white;
+                color: $color-yellow;
             }
         }
 
         .selected {
             padding: .3em 0;
-            color: $color-green;
-            border-bottom: 2px solid $color-green;
+            color: $color-orange;
+            border-bottom: 2px solid $color-orange;
         }
     }
 
@@ -97,7 +98,7 @@
 
         .selected {
             padding: .3em 0;
-            color: $color-gold;
+            color: $color-orange;
         }
     }
 
@@ -128,8 +129,8 @@
             margin: 0 1em 0 6em;
 
             a {
-                color: $color-black;
-                font-family: $font-family-sans;
+                color: $color-gray;
+                font-family: $font-family-sans-headers;
                 
                 &:hover {
                     color: $color-brown;

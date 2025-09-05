@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BASE TEXT FONTS */
 body {
-  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
+  font-family: "cambay", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brother-1816", Helvetica, Arial, sans-serif;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -89,7 +89,7 @@ a:hover {
 hr {
   border: 0;
   height: 3px;
-  background-color: rgb(235, 201, 127);
+  background-color: rgb(203, 86, 44);
   margin: 3em 0;
   width: 100%;
 }
@@ -102,7 +102,7 @@ hr {
 /* SECTION HEADING */
 .section-heading {
   font-size: 1em;
-  font-family: "brother-1816", Helvetica, Arial, sans-serif;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -124,9 +124,12 @@ hr {
 .button {
   display: inline-block;
   background-color: transparent;
-  border: 2px solid rgb(80, 107, 95);
-  color: rgb(80, 107, 95);
-  font-family: "brother-1816", Helvetica, Arial, sans-serif;
+  border: 2px solid rgb(228, 163, 78);
+  background-color: rgb(228, 163, 78);
+  color: rgb(86, 86, 78);
+  font-family: pentz-regular, serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.7em 1em;
@@ -134,9 +137,9 @@ hr {
   margin: 1em 0.5em 1em 0;
 }
 .button:hover {
-  border: 2px solid rgb(80, 107, 95);
-  color: rgb(241, 240, 243);
-  background-color: rgb(80, 107, 95);
+  border: 2px solid rgb(203, 86, 44);
+  color: rgb(224, 216, 199);
+  background-color: rgb(203, 86, 44);
 }
 
 /* SERVICE */
@@ -149,14 +152,15 @@ hr {
           justify-content: flex-start;
   padding: 0;
   list-style: none;
+  font-family: "cambay", sans-serif;
 }
 .service-btn li {
-  border: 1px solid rgb(80, 107, 95);
-  background-color: rgb(80, 107, 95);
-  color: rgb(235, 201, 127);
+  border: 1px solid rgb(228, 163, 78);
+  background-color: rgb(228, 163, 78);
+  color: rgb(86, 86, 78);
   border-radius: 5em;
   margin: 0.2em;
-  padding: 0.5em 1em;
+  padding: 0.2em 1em 0 1em;
   font-size: 0.8em;
   width: auto;
 }
@@ -170,14 +174,15 @@ hr {
           justify-content: flex-start;
   padding: 0;
   list-style: none;
+  font-family: "cambay", sans-serif;
 }
 .service-btn2 li {
-  border: 1px solid rgb(80, 107, 95);
-  background-color: rgb(80, 107, 95);
-  color: rgb(235, 201, 127);
+  border: 1px solid rgb(228, 163, 78);
+  background-color: rgb(228, 163, 78);
+  color: rgb(86, 86, 78);
   border-radius: 5em;
   margin: 0.2em;
-  padding: 0.5em 1em;
+  padding: 0.2em 1em 0 1em;
   font-size: 0.8em;
   width: auto;
 }
@@ -192,14 +197,15 @@ hr {
   margin-top: 1.3em;
   padding: 0;
   list-style: none;
+  font-family: "cambay", sans-serif;
 }
 .service-btn2-long li {
-  border: 1px solid rgb(80, 107, 95);
-  background-color: rgb(80, 107, 95);
-  color: rgb(235, 201, 127);
+  border: 1px solid rgb(228, 163, 78);
+  background-color: rgb(228, 163, 78);
+  color: rgb(86, 86, 78);
   border-radius: 5em;
   margin: 0.2em;
-  padding: 0.5em 1em;
+  padding: 0.2em 1em 0 1em;
   font-size: 0.8em;
   width: auto;
 }
@@ -617,7 +623,7 @@ body {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: rgb(80, 107, 95);
+    color: rgb(203, 86, 44);
     font-weight: bold;
     font-size: 18px;
     -webkit-transition: 0.6s ease;
@@ -633,7 +639,7 @@ body {
     border-radius: 3px 0 0 3px;
   }
   .process .ideation_phase .ideation_img .prev:hover, .process .ideation_phase .ideation_img .next:hover {
-    background-color: rgb(80, 107, 95);
+    background-color: rgb(203, 86, 44);
   }
   .process .ideation_phase .ideation_img .numbertext {
     color: rgba(47, 48, 46, 0.8);
@@ -647,7 +653,7 @@ body {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: rgb(80, 107, 95);
+    background-color: rgb(203, 86, 44);
     border-radius: 50%;
     display: inline-block;
     -webkit-transition: background-color 0.6s ease;
@@ -705,7 +711,7 @@ body {
     padding-top: 2em !important;
   }
   .resolution .resolution_info .intern_box {
-    color: rgb(80, 107, 95);
+    color: rgb(203, 86, 44) !important;
   }
   .resolution .resolution_img {
     display: -webkit-box !important;
@@ -926,18 +932,18 @@ body {
     margin: 0 !important;
   }
 
-  .about-green-bg .Brand_Pattern_01 {
+  .about-orange-bg .Brand_Pattern_01 {
     width: 40% !important;
     height: 780px !important;
   }
-  .about-green-bg .Currents {
+  .about-orange-bg .Currents {
     margin: 0 2em !important;
     height: 100% !important;
   }
-  .about-green-bg .Currents .img-favorites .row {
+  .about-orange-bg .Currents .img-favorites .row {
     margin: 0;
   }
-  .about-green-bg .Currents .img-favorites .row .one-third .fav-song {
+  .about-orange-bg .Currents .img-favorites .row .one-third .fav-song {
     margin-top: 0 !important;
   }
 
@@ -1101,7 +1107,7 @@ body {
 }
 .site-header a,
 .site-header-hero a {
-  color: rgb(235, 201, 127);
+  color: rgb(228, 163, 78);
   text-decoration: none;
 }
 .site-header h1,
@@ -1138,13 +1144,21 @@ body {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
+.site-header .site-nav li a {
+  color: rgb(86, 86, 78) !important;
+  font-size: 3em !important;
+}
+.site-header .site-nav li a:hover {
+  color: rgb(203, 86, 44) !important;
+}
+
 .section_border {
   margin: 2em 0;
 }
 
 /* HERO SECTION */
 .hero {
-  color: rgba(47, 48, 46, 0.8);
+  color: rgb(86, 86, 78);
   text-align: center;
   padding: 6em 0;
   min-height: 100vh;
@@ -1201,8 +1215,8 @@ body {
   height: 12px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  border-right: 2px solid rgb(80, 107, 95);
-  border-bottom: 2px solid rgb(80, 107, 95);
+  border-right: 2px solid rgb(203, 86, 44);
+  border-bottom: 2px solid rgb(203, 86, 44);
   -webkit-animation: arrow-wave 1s infinite;
           animation: arrow-wave 1s infinite;
   -webkit-animation-direction: alternate;
@@ -1245,22 +1259,26 @@ body {
 
 /* BACKGROUND COLOR */
 .dark-bg {
-  background-color: rgb(75, 75, 77);
+  background-color: rgb(86, 86, 78);
   padding: 0;
 }
 
-.green-bg {
-  background-color: rgb(80, 107, 95);
+.orange-bg {
+  background-color: rgb(203, 86, 44);
 }
-.green-bg .intern {
+.orange-bg .intern {
   display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
 }
-.green-bg h2,
-.green-bg h4 {
+.orange-bg .intern .intern_lg_title h2 {
+  font-size: 2em;
+  font-family: "pentz-regular", serif;
+}
+.orange-bg h2,
+.orange-bg h4 {
   color: rgb(235, 201, 127);
 }
 
@@ -1331,6 +1349,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.resume-info .connect-button .button {
+  font-family: "pentz-regular", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .resume-info .resume img {
   -webkit-box-shadow: 0px 0px 10px rgba(47, 48, 46, 0.8);
           box-shadow: 0px 0px 10px rgba(47, 48, 46, 0.8);
@@ -1394,7 +1417,7 @@ body {
   display: flex;
   overflow: hidden;
   height: 60px;
-  color: rgb(80, 107, 95);
+  color: rgb(203, 86, 44);
 }
 .project-container .about_info .bio .changing-text .texts-container .roles {
   margin: 0;
@@ -1487,13 +1510,13 @@ body {
 }
 
 /* PROJECT INFORMATION */
-.about-green-bg {
+.about-orange-bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
 }
-.about-green-bg .section_border {
+.about-orange-bg .section_border {
   width: 100%;
   position: absolute;
   top: 88.15vh;
@@ -1502,7 +1525,7 @@ body {
   display: -ms-grid;
   display: grid;
 }
-.about-green-bg .Brand_Pattern_01 {
+.about-orange-bg .Brand_Pattern_01 {
   margin: 0 2em 0 0;
   width: 20%;
   height: 200vh;
@@ -1510,7 +1533,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.about-green-bg .Currents {
+.about-orange-bg .Currents {
   margin: 2em;
   display: inline-block;
   -webkit-box-pack: center;
@@ -1520,20 +1543,20 @@ body {
   width: 60%;
   height: 195vh;
 }
-.about-green-bg .Currents h6 {
+.about-orange-bg .Currents h6 {
   color: rgb(235, 201, 127);
 }
-.about-green-bg .Currents .img-favorites h3 {
+.about-orange-bg .Currents .img-favorites h3 {
   color: rgb(241, 240, 243);
 }
-.about-green-bg .Currents .img-favorites .row .one-third .container {
+.about-orange-bg .Currents .img-favorites .row .one-third .container {
   position: relative;
   width: 100%;
 }
-.about-green-bg .Currents .img-favorites .row .one-third .fav-song {
+.about-orange-bg .Currents .img-favorites .row .one-third .fav-song {
   margin-top: 3em;
 }
-.about-green-bg .Currents .img-favorites .row .one-third .fav-image-card {
+.about-orange-bg .Currents .img-favorites .row .one-third .fav-image-card {
   opacity: 1;
   display: block;
   width: 100%;
@@ -1543,7 +1566,7 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.about-green-bg .Currents .img-favorites .row .one-third .fav-info {
+.about-orange-bg .Currents .img-favorites .row .one-third .fav-info {
   background-color: rgb(122, 102, 97);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -1555,24 +1578,24 @@ body {
           transform: translate(-50%, -50%);
   text-align: center;
 }
-.about-green-bg .Currents .img-favorites .row .one-third .fav-info h3 {
+.about-orange-bg .Currents .img-favorites .row .one-third .fav-info h3 {
   margin: 0;
   text-align: center;
   padding: 1em;
   color: rgb(241, 240, 243);
   font-size: 0.8em;
 }
-.about-green-bg .Currents .img-favorites .row .one-third .container:hover .fav-image-card {
+.about-orange-bg .Currents .img-favorites .row .one-third .container:hover .fav-image-card {
   opacity: 0.8;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
-.about-green-bg .Currents .img-favorites .row .one-third .container:hover .fav-info {
+.about-orange-bg .Currents .img-favorites .row .one-third .container:hover .fav-info {
   opacity: 1;
 }
 
 .black-bg {
-  background-color: rgb(75, 75, 77);
+  background-color: rgb(86, 86, 78);
 }
 .black-bg .section_border {
   width: 100%;
@@ -1584,12 +1607,14 @@ body {
   display: grid;
 }
 .black-bg .home-proj-title h1 {
-  color: rgb(235, 201, 127);
+  font-family: "pentz-classic", serif;
+  letter-spacing: 0.1em;
+  color: rgb(228, 163, 78);
   font-size: 4em;
   text-align: center;
 }
 .black-bg .project-container {
-  background-color: rgba(47, 48, 46, 0.8);
+  background-color: rgb(86, 86, 78);
 }
 .black-bg .project-container .proj-info {
   width: 500px;
@@ -1617,19 +1642,19 @@ body {
   margin: 4em;
 }
 .black-bg .intern_process .resolution_info h4 {
-  color: rgb(235, 201, 127);
+  color: rgb(228, 163, 78);
 }
 .black-bg .intern_process .resolution_info p {
-  color: rgb(241, 240, 243);
+  color: rgb(224, 216, 199);
 }
 .black-bg .muw {
   margin: 8em 4em 4em 4em;
 }
 .black-bg .muw .intern_info h4 {
-  color: rgb(235, 201, 127);
+  color: rgb(228, 163, 78);
 }
 .black-bg .muw .intern_info p {
-  color: rgb(241, 240, 243);
+  color: rgb(224, 216, 199);
 }
 
 .aa_pattern_bg {
@@ -1660,7 +1685,7 @@ body {
   height: 2%;
 }
 .aa_pattern_bg .mobile_app {
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
   padding: 4em;
   width: 100%;
   border-radius: 10px;
@@ -1741,7 +1766,7 @@ body {
   top: 0%;
 }
 .vl {
-  border-left: 3px solid rgb(80, 107, 95);
+  border-left: 3px solid rgb(203, 86, 44);
   height: 0;
   opacity: 0;
 }
@@ -1755,7 +1780,7 @@ body {
   top: -100px;
   left: 0;
   width: 70%;
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
   padding: 4em;
   border-radius: 10px;
 }
@@ -1784,7 +1809,7 @@ body {
   top: -140px;
   left: 0;
   width: 70%;
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
   padding: 4em;
   border-radius: 10px;
 }
@@ -1861,7 +1886,7 @@ body {
   position: relative;
   top: 30%;
   left: 0;
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
   padding: 4em;
   border-radius: 10px;
 }
@@ -1879,7 +1904,7 @@ body {
   top: 0;
   width: 100%;
   left: 0;
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
   padding: 4em;
   border-radius: 10px;
 }
@@ -1997,7 +2022,7 @@ body {
 }
 .mw .mw_links .other .home-hr {
   margin: 1em 0 1.5em 0;
-  background-color: rgb(235, 201, 127);
+  background-color: rgb(228, 163, 78);
 }
 .mw .mw_links .mw_prev,
 .mw .mw_links .mw_next {
@@ -2017,19 +2042,19 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
   height: 50vh;
 }
 .summary .summary-container h1 {
-  color: rgb(235, 201, 127);
+  color: rgb(228, 163, 78);
 }
 .summary .summary-container p {
-  color: rgb(235, 201, 127);
+  color: rgb(228, 163, 78);
   margin: 1em;
 }
 
 .sum_bg {
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(203, 86, 44);
 }
 .sum_bg .sum {
   display: inline-block;
@@ -2047,10 +2072,10 @@ body {
   margin: 1em 0;
 }
 .sum_bg .sum h1 {
-  color: rgb(235, 201, 127);
+  color: rgb(228, 163, 78);
 }
 .sum_bg .sum .sum_title h4 {
-  color: rgb(235, 201, 127);
+  color: rgb(228, 163, 78);
 }
 .sum_bg .sum .sum_info {
   display: -webkit-box;
@@ -2065,12 +2090,12 @@ body {
 }
 .sum_bg .sum .sum_info .sum_background_info {
   margin: 0;
-  color: rgb(241, 240, 243);
+  color: rgb(224, 216, 199);
 }
 
 /* PROJECT FOOTER NAV */
 .CTA {
-  background-color: rgb(241, 240, 243);
+  background-color: rgb(224, 216, 199);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2085,25 +2110,25 @@ body {
   padding: 1em 0;
 }
 .CTA li {
-  font-family: "brother-1816", Helvetica, Arial, sans-serif;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   list-style: none;
 }
 .CTA li a {
   padding: 0 3em 0 3em;
   text-decoration: none;
-  color: rgba(47, 48, 46, 0.8);
+  color: rgb(203, 86, 44);
   letter-spacing: 0.1em;
   font-size: 0.69em;
   font-weight: 700;
   text-transform: uppercase;
 }
 .CTA li a:hover {
-  color: rgb(122, 102, 97);
+  color: rgb(86, 86, 78);
 }
 
 /* SITE FOOTER */
 .site-footer {
-  background-color: rgba(47, 48, 46, 0.8);
+  background-color: rgb(224, 216, 199);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2131,11 +2156,11 @@ body {
   height: 110px;
 }
 .site-footer .footer-logo h3 {
-  color: rgb(241, 240, 243);
+  color: rgb(224, 216, 199);
   margin: 0.5em 0 0 0;
 }
 .site-footer .footer-logo h5 {
-  color: rgb(241, 240, 243);
+  color: rgb(224, 216, 199);
 }
 .site-footer .footer-logo .copyright-container {
   display: -webkit-box;
@@ -2159,7 +2184,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: rgb(241, 240, 243);
+  color: rgb(203, 86, 44);
 }
 .site-footer .site-nav .social-links {
   display: -webkit-box;
@@ -2172,13 +2197,13 @@ body {
   height: 40px;
 }
 .site-footer .site-nav .social-links a {
-  color: rgb(241, 240, 243);
+  color: rgb(86, 86, 78);
   font-size: 1.4em;
   text-decoration: none;
   height: 40px;
 }
 .site-footer .site-nav .social-links a:hover {
-  color: rgb(235, 201, 127);
+  color: rgb(203, 86, 44);
 }
 .site-footer .reserved {
   display: -webkit-box;
@@ -2299,12 +2324,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__nav2 > label:nth-child(1) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2312,12 +2337,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__nav2 > label:nth-child(2) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2325,12 +2350,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__nav2 > label:nth-child(3) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2338,12 +2363,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__nav2 > label:nth-child(4) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2351,12 +2376,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__nav2 > label:nth-child(5) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2364,12 +2389,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(6):checked ~ .carousel__nav2 > label:nth-child(6) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2377,12 +2402,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(7):checked ~ .carousel__nav2 > label:nth-child(7) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2390,12 +2415,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__nav > label:nth-child(8) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(8):checked ~ .carousel__nav2 > label:nth-child(8) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2403,12 +2428,12 @@ section-p {
   opacity: 1;
 }
 .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__nav > label:nth-child(9) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
 .carousel > input[type=radio]:nth-child(9):checked ~ .carousel__nav2 > label:nth-child(9) {
-  background: rgb(80, 107, 95);
+  background: rgb(203, 86, 44);
   cursor: default;
   pointer-events: none;
 }
@@ -2458,8 +2483,8 @@ section-p {
   height: inherit;
 }
 .carousel__prev > label:before, .carousel__next > label:before {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgb(80, 107, 95)), color-stop(10%, rgb(80, 107, 95)), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(rgb(80, 107, 95)), color-stop(10%, rgb(80, 107, 95)), color-stop(10%, rgba(51, 51, 51, 0)));
-  background: linear-gradient(to top, rgb(80, 107, 95) 0%, rgb(80, 107, 95) 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, rgb(80, 107, 95) 0%, rgb(80, 107, 95) 10%, rgba(51, 51, 51, 0) 10%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(203, 86, 44)), color-stop(10%, rgb(203, 86, 44)), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(rgb(203, 86, 44)), color-stop(10%, rgb(203, 86, 44)), color-stop(10%, rgba(51, 51, 51, 0)));
+  background: linear-gradient(to top, rgb(203, 86, 44) 0%, rgb(203, 86, 44) 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, rgb(203, 86, 44) 0%, rgb(203, 86, 44) 10%, rgba(51, 51, 51, 0) 10%);
   width: 60%;
   height: 60%;
   top: 100%;
@@ -2490,7 +2515,7 @@ section-p {
   z-index: 3;
 }
 .carousel__nav > label {
-  border: 1px solid rgb(80, 107, 95);
+  border: 1px solid rgb(203, 86, 44);
   display: inline-block;
   border-radius: 50%;
   cursor: pointer;
@@ -2507,7 +2532,7 @@ section-p {
   z-index: 3;
 }
 .carousel__nav2 > label {
-  border: 1px solid rgb(80, 107, 95);
+  border: 1px solid rgb(203, 86, 44);
   display: inline-block;
   border-radius: 50%;
   cursor: pointer;
@@ -2530,7 +2555,7 @@ section-p {
   position: absolute;
   top: 1.5em;
   right: 0.75em;
-  color: rgba(47, 48, 46, 0.8);
+  color: rgb(86, 86, 78);
   margin: 0;
   font-size: 1.5em;
   line-height: 1;
@@ -2540,7 +2565,7 @@ section-p {
   cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
-  fill: rgba(47, 48, 46, 0.8);
+  fill: rgb(203, 86, 44);
 }
 .site-header .site-nav .menu-button svg rect {
   -webkit-transition: 0.3s all ease-out;
@@ -2550,7 +2575,7 @@ section-p {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgb(80, 107, 95);
+  background-color: rgb(224, 216, 199);
   position: fixed;
   top: 0;
   right: 0;
@@ -2589,16 +2614,17 @@ section-p {
   letter-spacing: 0.2em;
 }
 .site-header .site-nav li a {
-  color: rgba(47, 48, 46, 0.8);
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  color: rgb(203, 86, 44);
   font-size: 2.3em;
 }
 .site-header .site-nav li a:hover {
-  color: rgb(241, 240, 243);
+  color: rgb(228, 163, 78);
 }
 .site-header .site-nav li .selected {
   padding: 0.3em 0;
-  color: rgb(80, 107, 95);
-  border-bottom: 2px solid rgb(80, 107, 95);
+  color: rgb(203, 86, 44);
+  border-bottom: 2px solid rgb(203, 86, 44);
 }
 .site-header .site-nav[data-navstate=open] .menu-button {
   position: fixed;
@@ -2629,7 +2655,7 @@ section-p {
 }
 .site-header .site-nav[data-navstate=open] .selected {
   padding: 0.3em 0;
-  color: rgb(235, 201, 127);
+  color: rgb(203, 86, 44);
 }
 @media (min-width: 768px) {
   .site-header .site-nav .menu-button {
@@ -2662,7 +2688,7 @@ section-p {
   }
   .site-header .site-nav li a {
     color: rgba(47, 48, 46, 0.8);
-    font-family: "brother-1816", Helvetica, Arial, sans-serif;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
   }
   .site-header .site-nav li a:hover {
     color: rgb(122, 102, 97);

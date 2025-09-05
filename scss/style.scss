@@ -3,17 +3,15 @@
 
 
 // VARIABLES
-$color-darkblack: rgba(75, 75, 77, 1);
-$color-black: rgba(47, 48, 46, 0.8);
-$color-brown:  rgba(122, 102, 97, 1);
-$color-copy-brown: rgba(174, 148, 142, 1);
-$color-gold: rgba( 235, 201, 127, 1);
-$color-white: rgba(241, 240, 243, 1);
-$color-green: rgba(80, 107, 95, 1);
 $color-orange: rgba(203, 86, 44, 1);
+$color-yellow: rgba(228, 163, 78, 1);
+$color-gray: rgba(86, 86, 78, 1);
+$color-creme: rgba(224, 216, 199, 1);
 
-$font-family-sans: 'brother-1816', Helvetica, Arial, sans-serif;
-$font-family-serif: 'ff-tisa-web-pro', Georgia, 'Times New Roman', Times, serif;
+$font-family-sans-headers: 'itc-avant-garde-gothic-pro', sans-serif;
+$font-family-sans-body: 'cambay', sans-serif;
+$font-family-tertiary-regular: 'pentz-regular', serif;
+$font-family-tertiary-classic: 'pentz-classic', serif;
 
 // BREAKPOINTS
 $breakpoint-small: 768px;
